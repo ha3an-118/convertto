@@ -1,0 +1,15 @@
+@font-face{
+    font-family:"broya";
+    src:url('BRoya.eot');
+    src:
+        url('../fonts/BRoya.woff') format("woff"),
+        url('../fonts/BRoya.otf') format('opentype');
+}
+@font-face{
+    font-family:"IRANSansDNFaNum";
+    src:url('../fonts/IRANSansDNFaNum/IRANSansDNFaNum.eot');
+    src:
+        url('../fonts/IRANSansDNFaNum/IRANSansDNFaNum.woff') format("woff"),
+        url('../fonts/IRANSansDNFaNum/IRANSansDNFaNum.otf') format('opentype'),
+        url('../fonts/IRANSansDNFaNum/IRANSansDNFaNum.svg#Yekan') format('svg');
+}

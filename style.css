@@ -1,0 +1,330 @@
+@import"css/colorpalet.css";
+@import"css/font.css";
+@import"css/tiFontIcon.css";
+
+body{
+    background-image: linear-gradient(#eeeeee, #dddddd);
+    background-repeat: no-repeat;
+    direction:rtl;
+    font-family: IRANSansDNFaNum !important;
+    }
+body ,html{
+  height: 100%;
+  margin: 0;
+  direction: rtl;
+}
+ /* ---------------- special font size ------------------*/
+ .fsm{
+   font-size: .5rem !important;
+   font-weight: 400;
+ }
+ .fr7{
+   font-size: .9rem !important;
+   font-weight: 400;
+ }
+ .fmd{
+   font-size: 1rem !important;
+ }
+ .flg{
+   font-size: 1.4rem !important;
+ }
+/* --------------- header part -----------------------*/
+
+.coustum-header{
+  background-color: rgba(62,62,62,.5) !important;
+
+}
+    /*---navigation part ------------*/
+    .dg-nav a , .dg-nav a:hover{
+      text-decoration: none;
+    }
+    .dgnavphone{
+
+      background-image: linear-gradient(to bottom, #3f3f3f , #3e3e3e);
+      z-index: 100000;
+      overflow: hidden;
+      width: 100%;
+      height: 0px;
+      position: absolute;
+      top:0;
+      left: 0;
+    }
+  /*----------slider part --------------------*/
+  .dg-slider{
+    position:absolute;;
+    top:0;
+    right: 0;
+    z-index:-1000;
+  }
+  .dg-slider-bg{
+    background-image: url("pic/1901.jpg") !important;
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+  /* ------------------header btn ------------------- */
+  /* ------------------ svg style ------------------- */
+  .dg-svgitem{
+        overflow:visible !important;
+      }
+      .dg-svgitem-spider {
+        opacity:.5;
+        background:transparent;
+        fill:var(--color1);
+      }
+      .dg-svg-background{
+        fill:var(--color2);
+
+      }
+    /* ---------------------- header button style  --------------- */
+
+    .dg-bg-spider{
+      font-size: 1.4rem;
+      width: 200px;
+      height: 200px;
+    }
+    .dg-test{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-image: url(pic/s2.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .dg-test::before{
+      content :"";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(pic/s1.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      opacity : 0.2;
+    }
+    .dg-test-text{
+      display: block;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      height: 20%;
+      top:40%;
+      right: 0%;
+    }
+    /*btn text on hover */
+      .header-btn-hover-text{
+        display: none;
+      }
+
+      .header-btn:hover .dg-test-text{
+        display: none;
+      }
+      .header-btn:hover .header-btn-hover-text{
+        display: flex;
+        height: 100%
+      }
+    /* --------------------------------------------------------------*/
+    /*    ---------------- start our service part --------------------*/
+    .bg-spider-ourservice{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .bg-spider-ourservice::before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-image: url(pic/s1-red.svg);
+      background-position: center;
+      opacity: .2;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 1000;
+    }
+
+
+
+    /* ------------------------------- protofile ----------------------- */
+    #dgprotofile button {
+      border: none;
+      border-radius: .5rem !important;header-btn-hover-text
+      font-weight: 400;
+    }
+
+    .dg-protofile-nav-btn ,.dg-protofile-nav-btn button{
+      min-width: 100px;
+    }
+
+    .masktest{
+      clip-path: url(#testpath);
+    }
+
+    .maskimg{
+        mask:url(pic/s2.svg);
+        mask-repeat:no-repeat;
+        mask-position:center;
+        mask-size:contain;
+        transition: all 1s;
+    }
+    .protofile-item:hover .maskimg{
+      mask:none;
+      mask-repeat:no-repeat;
+      mask-position:center;
+      mask-size:contain;
+
+    }
+
+
+    .protofile-text {
+      display: none;
+
+      background-color: rgba(62,62,62,.5) !important;
+    }
+    .protofile-item:hover .protofile-text{
+      display: flex;
+      position: absolute;
+      top:5%;
+      left:5%;
+      width: 90% !important;
+      height: 90% !important;
+      border: var(--color3);
+      box-shadow: 0 0 0 0.2rem rgba(216, 22, 48, 0.5) !important;
+
+    }
+    .forground-spider{
+
+    }
+    .forground-spider::before{
+
+    }
+    /* -------------------------- footer -------------------------------------*/
+    .dg-footer-input:focus{
+
+        border-color: var(--color3) !important;
+        box-shadow: 0 0 0 0.2rem rgba(216, 22, 48, 0.25) !important;
+    }
+
+
+    .dg-footer-bg{
+       background-image: linear-gradient(to bottom, #1f1f1f , #3e3e3e);
+    }
+/* -------------------------------------------------------------------------*/
+/* ----------------------- protofile page style  ---------------------------*/
+  .dg-cat-menu{
+    list-style: none;
+  }
+  .dg-cat-menu-item{
+    height: 70px;
+  }
+  .dg-cat-menu-item a:hover{
+    text-decoration: none !important;
+  }
+  .dg-cat-menu-item:hover a{
+    color: var(--color2) !important;
+  }
+  .dg-cat-menu-item:hover div.col-1{
+    background-color: var(--color3) !important;
+  }
+  /* ---------------------------------------------------------------------- */
+
+/* about us  */
+ .about-us{
+
+   background-image: linear-gradient(to bottom, rgba(62,62,62,.95) , rgba(62,62,62,.99)) ,url(pic/s1-red.svg);
+   background-position: center;
+   background-size: contain;
+   background-attachment: fixed;
+ }
+
+ /* ----------------------------------------------------------------------- */
+ /* ------------------------------ dg spider button ----------------------- */
+
+.dg-btn-spider{
+  position: absolute;
+  top:0px;
+  left:0px;
+  /*back ground part*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+}
+ .dg-btn-spider-background{
+   background-image: url(pic/s2.svg);
+ }
+ .dg-btn-spider-forground{
+   background-image: url(pic/s1.svg);
+   opacity: .2;
+ }
+
+ .dg-btn-spider-normal-content{
+
+   height: 20%;
+   position: absolute;
+   top: 40%;
+   width: 100%;
+   opacity: 1;
+
+ }
+ .dg-btn-spider-hover-content{
+
+ }
+/*--------------------------------------------------------------------------*/
+/*product page */
+.dg-product-slider{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100;
+}
+.dg-header{
+  position: relative;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+}
+
+.dg-product-slider-item img{
+  width: 100%;
+  height: 100%;
+}
+.dg-product-slider-item-text{
+  z-index: 1000;
+  position: relative;
+  bottom: 50%;
+  background-color: rgba(62,62,62,.5) !important;
+}
+/* ---------------------------------------------------------------------------*/
+/*dg weblog page style */
+.dg-cat-aside .list-group-item{
+  border: none;
+}
+.dg-cat-aside .dg-list-header{
+
+  border-bottom: 2px solid var(--color3);
+  color: var(--color3);
+
+}
+.dg-posts{
+  background-image: url(pic/s1.svg);
+  background-size: 200px;
+  
+}
