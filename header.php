@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' lang='fa'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/expand.js"></script>
+        <!--      slider part           -->
+        <script type="text/javascript" src="js/slider.js"></script>
+        <link rel="stylesheet" href="/css/slider.css">
+    </head>
+    <body >
+        <!-- start  header part  -->
+
+           <header class=' text-2 d-flex flex-column dg-nav  dg-slider-bg justify-content-between'>
+             <!--  start navigation part          -->
+              <section class="coustum-header container-fluid">
+               <!-- navigation part -->
+                <nav class="" >
+                  <div class="py-2  d-md-flex flex-row dg-nav d-none">
+                    <div id="navBrand" class="d-flex flex-row ">
+
+                        <div class="">
+                            <!-- logo of company -->
+                            <a href="#" title="" >
+                                <img  src="logo.png" title="" alt="" height="50px">
+                            </a>
+
+                        </div>
+
+                        <div class="align-self-center">
+                            <!-- name of company-->
+                            <a href="#" title="" class="">
+                                <span class=" pr-2 text-3 hover-text-2" style="font-size:1.2rem;">
+                                    دیجی رسان
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div id="navList" class=" d-flex flex-row pr-4 " style="flex-grow: 1;">
+                        <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
+                        <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
+                        <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
+                        <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
+
+                    </div>
+                    <div id="navSociai" class="d-flex flex-row ">
+                      <a href="#" title="" class="align-self-center px-1">
+                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                      </a>
+                      <a href="#" title="" class="align-self-center px-1">
+                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                      </a>
+                      <a href="#" title="" class="align-self-center px-1">
+                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                      </a>
+                      <a href="#" title="" class="align-self-center px-1">
+                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex d-md-none dg-nav py-2 justify-content-between">
+                    <div id="navBrand" class="d-flex flex-row ">
+
+                        <div class="">
+                            <!-- logo of company -->
+                            <a href="#" title="" >
+                                <img  src="logo.png" title="" alt="" height="50px">
+                            </a>
+
+                        </div>
+
+                        <div class="align-self-center">
+                            <!-- name of company-->
+                            <a href="#" title="" class="">
+                                <span class=" pr-2 text-3 hover-text-2" style="font-size:1.2rem;">
+                                    دیجی رسان
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="align-self-center">
+                      <button expandwinid="topnavphone" class="btn btn-danger" >
+                        <i class="ti ti-Line-Allign"></i>
+                      </button>
+                    </div>
+                  </div>
+                </nav>
+                <!-- slider part  -->
+              </section>
+              <!--  End  navigation part          -->
+
+
+              <div id="topnavphone" class="dgnavphone"
+              beforewidth="100%" beforeheight="0" beforepositiontop="0" beforepositionleft="0"
+              afterwidth="100%" afterheight="100%" afterpositiontop="0" afterpositionleft="0" >
+                <div class="contianer-fluid d-flex flex-column">
+
+                  <div>
+                    <div class="d-flex d-md-none dg-nav p-2 justify-content-between">
+                      <div id="navBrand" class="d-flex flex-row ">
+
+                          <div class="">
+                              <!-- logo of company -->
+                              <a href="#" title="" >
+                                  <img  src="logo.png" title="" alt="" height="50px">
+                              </a>
+
+                          </div>
+
+                          <div class="align-self-center">
+                              <!-- name of company-->
+                              <a href="#" title="" class="">
+                                  <span class=" pr-2 text-3 hover-text-2" style="font-size:1.2rem;">
+                                      دیجی رسان
+                                  </span>
+                              </a>
+                          </div>
+
+                      </div>
+                      <div class="align-self-center">
+                        <button expandwinid="topnavphone" class="btn btn-danger" >
+                          <i class="ti ti-Line-Allign"></i>
+                        </button>
+                      </div>
+
+                    </div>
+                    <div class="container-fluid">
+                      <hr class="col-11 mx-auto bg-1" style=" ">
+                    </div>
+                  </div>
+                  <div id="navSociaiphone" class="d-flex flex-row align-items-center justify-content-center my-2 ">
+                    <a href="#" title="" class="align-self-center px-1">
+                      <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                    </a>
+                    <a href="#" title="" class="align-self-center px-1">
+                      <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                    </a>
+                    <a href="#" title="" class="align-self-center px-1">
+                      <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                    </a>
+                    <a href="#" title="" class="align-self-center px-1">
+                      <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                    </a>
+                  </div>
+                  <div id="navListphone" class=" d-flex flex-column pr-4 align-items-start " style=";">
+                      <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
+                      <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
+                      <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
+                      <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
+
+                  </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+              </div>
+              <!--   start header  button part   -->
+
+              <section class="d-flex flex-column  flex-sm-row align-items-center justify-content-center mb-5 pb-5">
+
+                  <div id="btnmotiongraphic" class="dg-bg-spider header-btn mx-5 ">
+                    <a href="#" class="text-2 hover-text-1">
+                      <div class="dg-test">
+                            <div class="dg-test-text">
+                            موشن گرافیک
+                            </div>
+                            <div class="header-btn-hover-text flex-column align-items-center justify-content-center text-2">
+                                <div class="">
+                                  <a href="#" class="text-2 hover-text-1">  سفارش</a>
+
+                                </div>
+                                <hr>
+                                <div class="">
+                                  دیدن نمونه کار ها
+                                </div>
+                            </div>
+                    </div>
+                    </a>
+                  </div>
+
+
+                  <div id="btnWebsite" class="dg-bg-spider mx-5">
+                    <a href="#" class="text-2 hover-text-1">
+                      <div class="dg-test">
+                            <div class="dg-test-text">
+                                طراحی وب سایت
+                            </div>
+                    </div>
+                    </a>
+                  </div>
+
+
+              </section>
+
+              <!--   End  header  button part   -->
+
+           </header>
+
+        <!-- end header part -->
