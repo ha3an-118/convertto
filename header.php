@@ -4,12 +4,12 @@
         <meta charset='utf-8' lang='fa'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/css/bootstrap.css">
-        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/js/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/js/expand.js"></script>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/bootstrap.css">
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/expand.js"></script>
         <!--      slider part           -->
-        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/js/slider.js"></script>
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/css/slider.css">
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/slider.js"></script>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/slider.css">
     </head>
     <body >
         <!-- start  header part  -->
