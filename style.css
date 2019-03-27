@@ -1,6 +1,4 @@
-@import"css/colorpalet.css";
-@import"css/font.css";
-@import"css/tiFontIcon.css";
+
 
 body{
     background-image: linear-gradient(#eeeeee, #dddddd);
@@ -326,5 +324,5 @@ body ,html{
 .dg-posts{
   background-image: url(pic/s1.svg);
   background-size: 200px;
-  
+
 }

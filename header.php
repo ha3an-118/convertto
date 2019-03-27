@@ -10,6 +10,11 @@
         <!--      slider part           -->
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/slider.js"></script>
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/slider.css">
+        <!-- add other css file  -->
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/colorpalet.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/font.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/tiFontIcon.css">
+
     </head>
     <body >
         <!-- start  header part  -->
