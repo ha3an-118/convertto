@@ -45,13 +45,20 @@
                         </div>
 
                     </div>
+
                     <div id="navList" class=" d-flex flex-row pr-4 " style="flex-grow: 1;">
+
                         <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
                         <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
                         <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
                         <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
 
                     </div>
+                    <div class="">
+                      <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+                    </div>
+
+
                     <div id="navSociai" class="d-flex flex-row ">
                       <a href="#" title="" class="align-self-center px-1">
                         <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
@@ -67,6 +74,9 @@
                       </a>
                     </div>
                   </div>
+
+
+
                   <div class="d-flex d-md-none dg-nav py-2 justify-content-between">
                     <div id="navBrand" class="d-flex flex-row ">
 
