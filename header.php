@@ -49,14 +49,19 @@
                     <div id="navList" class=" d-flex flex-row pr-4 " style="flex-grow: 1;">
 
                         <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
-                        <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
-                        <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
-                        <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
+                        <?php
+                          $arg_top_menu =array(
+                              'theme_location' => 'top-menu',
+                              'link_before' => '<span class="align-self-center pr-2 text-2 hover-text-3">',
+                              'link_after' => '</span>',
 
+                          );
+
+                          wp_nav_menu( $arg_top_menu );
+
+                          ?>
                     </div>
-                    <div class="">
-                      <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
-                    </div>
+
 
 
                     <div id="navSociai" class="d-flex flex-row ">
