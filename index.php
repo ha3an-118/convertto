@@ -1,7 +1,5 @@
-<?php wp_header(); ?>
+<?php
 
+  echo "this is index file ";
 
-
-
-
-<?php wp_footer(); ?>
+ ?>
