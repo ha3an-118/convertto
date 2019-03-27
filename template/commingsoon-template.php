@@ -67,9 +67,10 @@
        </header>
        <div class="socialmedia d-flex flex-row justify-content-center pt-3">
 
-           <a href="#" class="px-2 text-light"> <i class="fab fa-3x fa-instagram"></i> </a>
-           <a href="#" class="px-2 text-light"> <i class="fab fa-3x fa-linkedin"></i> </a>
-           <a href="#" class="px-2 text-light"> <i class="fab fa-3x fa-youtube"></i> </a>
+           <a href="https://www.instagram.com/digirasan/" class="px-2 text-light"> <i class="fab fa-3x fa-instagram"></i> </a>
+           <a href="http://t.me/DigiRasan" class="px-2 text-light"> <i class="fab fa-3x fa-telegram"></i> </a>
+           <a href="https://www.youtube.com/channel/UCSKBXGBnFrlNw8BRN8cCY8A" class="px-2 text-light" title="youtube"> <i class="fab fa-3x fa-youtube"></i> </a>
+           <a href="https://www.aparat.com/DigiRasan/%D8%AF%DB%8C%D8%AC%DB%8C_%D8%B1%D8%B3%D8%A7%D9%86" class="px-2 text-light" title="aparat"> <i class="fab fa-3x fa-youtube"></i> </a>
 
 
 
