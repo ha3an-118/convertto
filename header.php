@@ -46,22 +46,25 @@
 
                     </div>
 
-                    <div id="navList" class=" d-flex flex-row pr-4 " style="flex-grow: 1;">
+                    <div id="navList1" class=" d-flex flex-row pr-4 " style="flex-grow: 1;">
 
                         <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
-                        <?php
-                          $arg_top_menu =array(
-                              'theme_location' => 'top-menu',
-                              'link_before' => '<span class="align-self-center pr-2 text-2 hover-text-3">',
-                              'link_after' => '</span>',
 
-                          );
-
-                          wp_nav_menu( $arg_top_menu );
-
-                          ?>
                     </div>
+                    <?php
+                      $arg_top_menu =array(
+                          'theme_location' => 'top-menu',
+                          'link_before' => '<span class="align-self-center pr-2 text-2 hover-text-3">',
+                          'link_after' => '</span>',
+                          'menu_class' => 'd-flex flex-row',
+                          'container_class' => 'd-flex flex-row pr-4',
+                          'container_id' => 'navList',
 
+                      );
+
+                      wp_nav_menu( $arg_top_menu );
+
+                      ?>
 
 
                     <div id="navSociai" class="d-flex flex-row ">
