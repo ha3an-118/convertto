@@ -52,15 +52,32 @@
 
                     </div>
                     <?php
-                      $arg_top_menu =array(
+                      $arg_top_menu1 =array(
                           'theme_location' => 'top-menu',
                           'link_before' => '<span class="align-self-center pr-2 text-2 hover-text-3">',
                           'link_after' => '</span>',
-                          'menu_class' => 'd-flex flex-row',
+                          'menu_class' => 'd-flex flex-row ha-nav-menu-top ',
                           'container_class' => 'd-flex flex-row pr-4',
                           'container_id' => 'navList',
+                          'before'  => '<li class="">',
+                          'after'   => '',
 
                       );
+                      $arg_top_menu array(
+                        'menu_class'        => "d-flex flex-row",
+                        'menu_id'           => "",
+                        'container'         => "div",
+                        'container_class'   => "ha-nav-menu-top",
+                        'container_id'      => "navList",
+                        'before'            => "",
+                        'after'             => "",
+                        'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3'>",
+                        'link_after'        => "</span>",
+                        'theme_location'    => "top-menu",
+
+                      );
+
+
 
                       wp_nav_menu( $arg_top_menu );
 

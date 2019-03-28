@@ -33,6 +33,14 @@ body ,html{
 
 }
     /*---navigation part ------------*/
+    .ha-nav-menu-top{
+
+
+    }
+    .ha-nav-menu-top ul{
+      list-style: none;
+    }
+
     .dg-nav a , .dg-nav a:hover{
       text-decoration: none;
     }
