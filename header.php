@@ -56,7 +56,7 @@
                         'container_id'      => "navList",
                         'before'            => "",
                         'after'             => "",
-                        'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3'>",
+                        'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3 flg'>",
                         'link_after'        => "</span>",
                         'theme_location'    => "top-menu",
 
