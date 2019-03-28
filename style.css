@@ -34,7 +34,7 @@ body ,html{
 }
     /*---navigation part ------------*/
     .ha-nav-menu-top{
-
+        flex-grow: 1 !important;
 
     }
     .ha-nav-menu-top ul{

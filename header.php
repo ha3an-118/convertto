@@ -46,23 +46,8 @@
 
                     </div>
 
-                    <div id="navList1" class=" d-flex flex-row pr-4 " style="flex-grow: 1;">
 
-                        <a href="#" class="align-self-center pr-2 text-2 hover-text-3">صفحه اصلی </a>
-
-                    </div>
                     <?php
-                      $arg_top_menu1 =array(
-                          'theme_location' => 'top-menu',
-                          'link_before' => '<span class="align-self-center pr-2 text-2 hover-text-3">',
-                          'link_after' => '</span>',
-                          'menu_class' => 'd-flex flex-row ha-nav-menu-top ',
-                          'container_class' => 'd-flex flex-row pr-4',
-                          'container_id' => 'navList',
-                          'before'  => '<li class="">',
-                          'after'   => '',
-
-                      );
                       $arg_top_menu = array(
                         'menu_class'        => "d-flex flex-row align-self-center p-0 m-0",
                         'menu_id'           => "",
