@@ -64,10 +64,10 @@
 
                       );
                       $arg_top_menu = array(
-                        'menu_class'        => "d-flex flex-row",
+                        'menu_class'        => "d-flex flex-row align-self-center p-0 m-0",
                         'menu_id'           => "",
                         'container'         => "div",
-                        'container_class'   => "ha-nav-menu-top",
+                        'container_class'   => "ha-nav-menu-top d-flex",
                         'container_id'      => "navList",
                         'before'            => "",
                         'after'             => "",
