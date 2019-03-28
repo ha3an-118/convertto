@@ -63,7 +63,7 @@
                           'after'   => '',
 
                       );
-                      $arg_top_menu array(
+                      $arg_top_menu = array(
                         'menu_class'        => "d-flex flex-row",
                         'menu_id'           => "",
                         'container'         => "div",
