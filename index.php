@@ -5,9 +5,10 @@
 
 get_header();
 ?>
-<div class="">
-  this is test
-</div>
 
 <?php
+
+dynamic_sidebar("sidebar-1");
+
+
 get_footer();

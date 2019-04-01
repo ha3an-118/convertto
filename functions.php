@@ -2,7 +2,7 @@
 
 
 // register menu one menu for phone one for social menu and one for top menu
-
+require_once(__DIR__."/lib/helper_functions.php");
 
 function ha_register_menu(){
   $arg = array(
@@ -41,5 +41,8 @@ function ha_widgets_init() {
         ) );
         }
 
+
+// ----------------------------------------------------------
+ha_add_widget("aboutus");//function on lib/helper_functions
 
  ?>
