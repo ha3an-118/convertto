@@ -45,12 +45,35 @@
               <section id="ourlink" class="mb-3">
                 <div  class="d-flex flex-column flex-md-row align-items-center justify-content-md-between text-2 ">
 
-                    <div id="dgAddress" class="p-2 ">
+                  <?php /*  <div id="dgAddress" class="p-2 ">
                           بابل میدان کشوری پاساژ تفرشی
                     </div>
                     <div id="dgPhoneNumber" class="p-2" style="direction:ltr;">
                             +۹۸−۱۱−۳۲۲۶۵۸۷۴
                     </div>
+                    */ ?>
+                    <?php
+                    $arg_contact_info = array(
+                      'menu_class'        => "d-flex flex-row flex-wrap flex-sm-nowrap p-2  justify-content-center  justify-content-sm-end p-0 m-0 ha-list-style-none",
+                      'menu_id'           => "",
+                      'container'         => "div",
+                      'container_class'   => "d-flex  justify-content-start",
+                      'container_id'      => "socialmenufooter",
+                      'before'            => "",
+                      'after'             => "",
+                      'link_before'       => "<span class='align-self-center pr-3 text-2 hover-text-3 fmd'>",
+                      'link_after'        => "</span>",
+                      'theme_location'    => "contact-info-footer",
+
+                    );
+
+                    wp_nav_menu($arg_contact_info);
+
+                     ?>
+
+
+
+                    <?php /*
                     <div id="dgSocialMedia" class="d-flex flex-row flex-wrap flex-sm-nowrap p-2  justify-content-center  justify-content-sm-end " style="flex-grow: 1;">
                           <a href="#" class="hover-text-3 text-2 px-2">linkedin</a>
                           <a href="#" class="hover-text-3 text-2 px-2">aparat</a>
@@ -58,6 +81,29 @@
                           <a href="#" class="hover-text-3 text-2 px-2">facebook</a>
                           <a href="#" class="hover-text-3 text-2 px-2">youtube</a>
                     </div>
+                    */ ?>
+                    <?php
+                      $arg_footer_social = array(
+                        'menu_class'        => "d-flex flex-row flex-wrap flex-sm-nowrap p-2  justify-content-center  justify-content-sm-end p-0 m-0 ha-list-style-none",
+                        'menu_id'           => "",
+                        'container'         => "div",
+                        'container_class'   => "ha-flex-grows-1  d-flex  justify-content-end",
+                        'container_id'      => "socialmenufooter",
+                        'before'            => "",
+                        'after'             => "",
+                        'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3 fmd'>",
+                        'link_after'        => "</span>",
+                        'theme_location'    => "social-menu-footer",
+
+                      );
+
+
+
+                      wp_nav_menu( $arg_footer_social );
+
+                      ?>
+
+
                 </div>
               </section>
               <div class="container-fluid">

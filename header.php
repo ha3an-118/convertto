@@ -29,8 +29,9 @@
 
                         <div class="">
                             <!-- logo of company -->
-                            <a href="#" title="" >
-                                <img  src="logo.png" title="" alt="" height="50px">
+                            <a href="#" title=" <?php bloginfo("name") ?>"  class="">
+                                <!-- <img  src="logo.png" title="" alt="" height="50px"> -->
+                                <?php the_custom_logo(); ?>
                             </a>
 
                         </div>
@@ -39,7 +40,7 @@
                             <!-- name of company-->
                             <a href="#" title="" class="">
                                 <span class=" pr-2 text-3 hover-text-2" style="font-size:1.2rem;">
-                                    دیجی رسان
+                                    <?php bloginfo("name") ?>
                                 </span>
                             </a>
                         </div>
@@ -49,16 +50,43 @@
 
                     <?php
                       $arg_top_menu = array(
-                        'menu_class'        => "d-flex flex-row align-self-center p-0 m-0",
+                        'menu_class'        => "d-flex flex-row align-self-center p-0 m-0 pr-3",
                         'menu_id'           => "",
                         'container'         => "div",
                         'container_class'   => "ha-nav-menu-top d-flex",
                         'container_id'      => "navList",
                         'before'            => "",
                         'after'             => "",
-                        'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3 flg'>",
+                        'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3 fmd'>",
                         'link_after'        => "</span>",
                         'theme_location'    => "top-menu",
+
+                      );
+
+                      wp_nav_menu( $arg_top_menu );
+
+                      ?>
+                    <?php /*
+                    <!--  this is code sample  -->
+                    <!-- <div id="navSociai" class="d-flex flex-row ">
+                      <a href="#" title="" class="align-self-center px-1">
+                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
+                      </a>
+
+                    </div> -->
+                     */ ?>
+                    <?php
+                      $arg_top_menu = array(
+                        'menu_class'        => "d-flex flex-row align-self-center p-0 m-0 pr-3",
+                        'menu_id'           => "",
+                        'container'         => "div",
+                        'container_class'   => "socialmenu d-flex pl-3",
+                        'container_id'      => "socialmenutop",
+                        'before'            => "",
+                        'after'             => "",
+                        'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3 fmd'>",
+                        'link_after'        => "</span>",
+                        'theme_location'    => "social-menu",
 
                       );
 
@@ -67,23 +95,6 @@
                       wp_nav_menu( $arg_top_menu );
 
                       ?>
-
-
-                    <div id="navSociai" class="d-flex flex-row ">
-                      <a href="#" title="" class="align-self-center px-1">
-                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                      </a>
-                      <a href="#" title="" class="align-self-center px-1">
-                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                      </a>
-                      <a href="#" title="" class="align-self-center px-1">
-                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                      </a>
-                      <a href="#" title="" class="align-self-center px-1">
-                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                      </a>
-                    </div>
-                  </div>
 
 
 
@@ -132,7 +143,8 @@
                           <div class="">
                               <!-- logo of company -->
                               <a href="#" title="" >
-                                  <img  src="logo.png" title="" alt="" height="50px">
+                                  <!-- <img  src="logo.png" title="" alt="" height="50px"> -->
+                                  <?php the_custom_logo(); ?>
                               </a>
 
                           </div>
@@ -141,7 +153,7 @@
                               <!-- name of company-->
                               <a href="#" title="" class="">
                                   <span class=" pr-2 text-3 hover-text-2" style="font-size:1.2rem;">
-                                      دیجی رسان
+                                      <?php bloginfo("name") ?>
                                   </span>
                               </a>
                           </div>
