@@ -27,6 +27,8 @@ $custom_logo_arg = array(
 );
 
 add_theme_support( 'custom-logo' );
+// add_theme_support();
+add_theme_support( 'post-thumbnails' );
 
 add_action( 'widgets_init', 'ha_widgets_init' );
 function ha_widgets_init() {
@@ -44,5 +46,5 @@ function ha_widgets_init() {
 
 // ----------------------------------------------------------
 ha_add_widget("aboutus");//function on lib/helper_functions
-
+ha_add_widget("portfolio")
  ?>

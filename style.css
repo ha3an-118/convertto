@@ -175,14 +175,14 @@ body ,html{
 
 
 
-    /* ------------------------------- protofile ----------------------- */
-    #dgprotofile button {
+    /* ------------------------------- portfolio ----------------------- */
+    #haportfolio button {
       border: none;
       border-radius: .5rem !important;header-btn-hover-text
       font-weight: 400;
     }
 
-    .dg-protofile-nav-btn ,.dg-protofile-nav-btn button{
+    .ha-portfolio-nav-btn ,.ha-portfolio-nav-btn button{
       min-width: 100px;
     }
 
@@ -197,6 +197,8 @@ body ,html{
         mask-size:contain;
         transition: all 1s;
     }
+
+    
     .protofile-item:hover .maskimg{
       mask:none;
       mask-repeat:no-repeat;
