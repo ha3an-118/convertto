@@ -56,6 +56,7 @@ class Portfoliowidget extends WP_Widget
 
             $portfolio_arg = array(
                                     'post_type'  => 'haportfolio',
+                                    'posts_per_page' => 12,
 
 
 
@@ -69,8 +70,11 @@ class Portfoliowidget extends WP_Widget
 
                   <?php
 
-              }
-            }
+              }//end while
+
+            }//end if
+            wp_reset_postdata();
+
 
 
            ?>
