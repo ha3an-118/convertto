@@ -73,8 +73,7 @@
 
 
 
-
-
+ dynamic_sidebar('portfoliowidgetarea');
 
 
  get_footer();
