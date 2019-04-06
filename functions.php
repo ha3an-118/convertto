@@ -51,6 +51,24 @@ function ha_widgets_init() {
           	'after_title'   => '</h2>',
             ) );
 
+    register_sidebar( array(
+                    'name' => __( 'weblog widget area' ),
+                    'id' => 'weblogwidgetarea',
+                    'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+                    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+                    'after_widget'  => '</li>',
+                    'before_title'  => '<h2 class="widgettitle">',
+                    'after_title'   => '</h2>',
+                    ) );
+    register_sidebar( array(
+                                    'name' => __( 'weblog widget area side' ),
+                                    'id' => 'weblogwidgetareaside',
+                                    'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+                                    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+                                    'after_widget'  => '</li>',
+                                    'before_title'  => '<h2 class="widgettitle">',
+                                    'after_title'   => '</h2>',
+                                    ) );
         }
 
 
