@@ -75,7 +75,7 @@ body ,html{
     z-index:-1000;
   }
   .dg-slider-bg{
-    background-image: url("assets/image/1901.jpg") !important;
+    background-image: url("assets/image/1.png") !important;
     height: 100%;
 
   /* Center and scale the image nicely */
@@ -198,7 +198,7 @@ body ,html{
         transition: all 1s;
     }
 
-    
+
     .protofile-item:hover .maskimg{
       mask:none;
       mask-repeat:no-repeat;
