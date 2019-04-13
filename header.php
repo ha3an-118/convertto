@@ -76,7 +76,7 @@
                     </div> -->
                      */ ?>
                     <?php
-                      $arg_top_menu = array(
+                      $arg_top_menu_social = array(
                         'menu_class'        => "d-flex flex-row align-self-center p-0 m-0 pr-3",
                         'menu_id'           => "",
                         'container'         => "div",
@@ -92,10 +92,10 @@
 
 
 
-                      wp_nav_menu( $arg_top_menu );
+                      wp_nav_menu( $arg_top_menu_social );
 
                       ?>
-
+                    </div>
 
 
                   <div class="d-flex d-md-none dg-nav py-2 justify-content-between">
@@ -104,7 +104,8 @@
                         <div class="">
                             <!-- logo of company -->
                             <a href="#" title="" >
-                                <img  src="logo.png" title="" alt="" height="50px">
+                                <!-- <img  src="logo.png" title="" alt="" height="50px"> -->
+                                <?php the_custom_logo(); ?>
                             </a>
 
                         </div>
@@ -113,7 +114,7 @@
                             <!-- name of company-->
                             <a href="#" title="" class="">
                                 <span class=" pr-2 text-3 hover-text-2" style="font-size:1.2rem;">
-                                    دیجی رسان
+                                    <?php bloginfo("name") ?>
                                 </span>
                             </a>
                         </div>
@@ -170,7 +171,10 @@
                       <hr class="col-11 mx-auto bg-1" style=" ">
                     </div>
                   </div>
-                  <div id="navSociaiphone" class="d-flex flex-row align-items-center justify-content-center my-2 ">
+
+
+
+                  <!-- <div id="navSociaiphone" class="d-flex flex-row align-items-center justify-content-center my-2 ">
                     <a href="#" title="" class="align-self-center px-1">
                       <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
                     </a>
@@ -183,15 +187,57 @@
                     <a href="#" title="" class="align-self-center px-1">
                       <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
                     </a>
-                  </div>
-                  <div id="navListphone" class=" d-flex flex-column pr-4 align-items-start " style=";">
+                  </div> -->
+                  <?php
+                    $arg_top_menu_social = array(
+                      'menu_class'        => "d-flex flex-row align-self-center  p-0 m-0 pr-3",
+                      'menu_id'           => "",
+                      'container'         => "div",
+                      'container_class'   => "socialmenu d-flex align-items-center justify-content-center ",
+                      'container_id'      => "socialmenutop",
+                      'before'            => "",
+                      'after'             => "",
+                      'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3 fmd'>",
+                      'link_after'        => "</span>",
+                      'theme_location'    => "social-menu",
+
+                    );
+
+
+
+                    wp_nav_menu( $arg_top_menu_social );
+
+                    ?>
+
+
+
+
+
+                  <!-- <div id="navListphone" class=" d-flex flex-column pr-4 align-items-start " style=";">
                       <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
                       <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
                       <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
                       <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
 
-                  </div>
+                  </div> -->
 
+                  <?php
+                    $arg_top_menu = array(
+                      'menu_class'        => "d-flex flex-column pr-4 align-items-start p-0 m-0 phone-menu-top",
+                      'menu_id'           => "",
+                      'container'         => "div",
+                      'container_class'   => "ha-nav-menu-top d-flex",
+                      'container_id'      => "navList",
+                      'before'            => "",
+                      'after'             => "",
+                      'link_before'       => "<span class=' pr-2 text-2 hover-text-3 fmd pt-3'>",
+                      'link_after'        => "</span>",
+                      'theme_location'    => "top-menu",
+
+                    );
+
+                    wp_nav_menu( $arg_top_menu );
+                    ?>
 
                 </div>
 
@@ -210,11 +256,11 @@
 
                   <div id="btnmotiongraphic" class="dg-bg-spider header-btn mx-5 ">
                     <a href="#" class="text-2 hover-text-1">
-                      <div class="dg-test">
+                      <div class=" dg-test">
                             <div class="dg-test-text">
                             موشن گرافیک
                             </div>
-                            <div class="header-btn-hover-text flex-column align-items-center justify-content-center text-2">
+                        <!--    <div class="header-btn-hover-text flex-column align-items-center justify-content-center text-2">
                                 <div class="">
                                   <a href="#" class="text-2 hover-text-1">  سفارش</a>
 
@@ -223,7 +269,7 @@
                                 <div class="">
                                   دیدن نمونه کار ها
                                 </div>
-                            </div>
+                            </div> -->
                     </div>
                     </a>
                   </div>
