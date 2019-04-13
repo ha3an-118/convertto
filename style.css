@@ -1,8 +1,8 @@
 
 
 body{
-    background-image: linear-gradient(#eeeeee, #dddddd);
-    background-repeat: no-repeat;
+    /* background-image: linear-gradient(#eeeeee, #dddddd);
+    background-repeat: no-repeat; */
     direction:rtl;
     font-family: IRANSansDNFaNum !important;
     }
