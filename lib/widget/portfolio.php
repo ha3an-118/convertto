@@ -19,7 +19,7 @@ class Portfoliowidget extends WP_Widget
 
 
     ?>
-    <section id="haportfolio" class="bg-color2 container-fluid mb-5 ">
+    <section id="<?php echo esc_attr($this->get_field_id("haportfolio")) ?>" role="haportfolio" class="bg-color2 container-fluid mb-5 ">
 
         <!-- header   -->
         <?php
@@ -29,28 +29,34 @@ class Portfoliowidget extends WP_Widget
 
             $terms = get_terms( array(
                                   'taxonomy' => 'portfolio_cat',
-                                  'hide_empty' => false,
+                                  'hide_empty' => true,
                                   'parent' => 0,
                                   )
                                 );
           ?>
-          <div id="haPortfolioNav" class="mx-auto d-flex flex-row flex-wrap  my-4 justify-content-center justify-content-md-start">
+          <div id="<?php echo esc_attr($this->get_field_id("haportfolilonavigation")) ?>" class="mx-auto d-flex flex-row flex-wrap  my-4 justify-content-center justify-content-md-start">
 
             <?php  foreach( $terms as  $term ): ?>
             <div class="ha-portfolio-nav-btn my-1">
-               <button type="button" name="button" class=" bg-3 text-2 p-2 px-4 mx-2 rounded mw-100">
+               <button type="button" name="button" showid="<?php echo $term->term_id; ?>" onclick="hafilterportfolio(this)"
+                        class="btn bg-3 text-2 p-2 px-4 mx-2 rounded mw-100" >
                    <?php echo $term->name; ?>
                </button>
             </div>
           <?php endforeach; ?>
-
+          <div class="ha-portfolio-nav-btn my-1">
+             <button type="button" name="button" showid="0" onclick="hafilterportfolio(this)"
+                      class="btn bg-3 text-2 p-2 px-4 mx-2 rounded mw-100" >
+                      نمایش همه
+             </button>
+          </div>
           </div>
 
 
 
 
         <!-- content -->
-        <div id="haPortfolioItems" class=" d-flex flex-row flex-wrap justify-content-around ">
+        <div id="<?php echo esc_attr($this->get_field_id("haPortfolioItems")) ?>" class=" d-flex flex-row flex-wrap justify-content-around ">
 
           <?php
 

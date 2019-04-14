@@ -2,10 +2,20 @@
 /*
 * this is template part of portfolio post type
 */
+
+
+$terms = get_the_terms($post,'portfolio_cat');
+foreach($terms as $term):
+  $termid =  ((int)$term->parent == 0)?$term->term_id:0;
+endforeach;
+
+
 ?>
 <!-- start protofile item  -->
 
-<div class="col-12 col-sm-11 mx-sm-auto mx-md-0 col-md-5 col-lg-4 col-xl-3 my-2 protofile-item">
+<div class="col-12 col-sm-11 mx-sm-auto mx-md-0 col-md-5 col-lg-4 col-xl-3 my-2 protofile-item"
+      termid=<?php echo $termid ?>
+    >
 
   <div class="w-100">
     <div class="w-100">

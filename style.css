@@ -366,3 +366,8 @@ body ,html{
 .ha-list-style-none{
   list-style: none;
 }
+
+/* --------------------- portfolio ----------------------------*/
+[role="haportfolio"]{
+  transition: all 1s;
+}
