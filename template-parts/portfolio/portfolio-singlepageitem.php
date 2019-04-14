@@ -6,7 +6,7 @@
 
 <!-- start protofile item  -->
 
-<div class=" ">
+<div class="col-12 col-sm-6 col-lg-12 ">
 
   <div class="w-100 protofile-item">
     <div class="w-100">

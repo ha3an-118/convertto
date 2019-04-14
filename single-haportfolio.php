@@ -6,14 +6,14 @@
 get_header("single");
 
 ?>
-<div  class="d-flex flex-row justify-content-between mt-3">
+<div  class="d-flex  flex-column  flex-lg-row justify-content-between mt-3">
 
-  <div class="col-9">
+  <div class="col-12 col-lg-9">
 
     <?php get_template_part("template-parts/portfolio/portfolio","singlepage"); ?>
 
   </div>
-  <div class="col-3  m-0 d-flex flex-column  justify-content-around ">
+  <div class="col-12 col-lg-3  m-0 d-flex flex-row flex-lg-column flex-wrap  justify-content-around ">
         <?php
         $portfolio_arg = array(
                                 'post_type'  => 'haportfolio',
