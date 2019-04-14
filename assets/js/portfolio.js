@@ -9,6 +9,7 @@ function hafilterportfolio( inputobject ){
     $(portfolioID).find("[termid]").show();
   }//end if showid ==0
   else{
+    $(portfolioID).find("[termid]").show();
     var x = $(portfolioID).find("[termid]").not("[termid="+showid+"]").hide();
     console.log(x);
 
