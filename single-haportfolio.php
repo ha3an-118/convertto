@@ -11,9 +11,11 @@ get_header("single");
   <div class="col-12 col-lg-9">
 
     <?php get_template_part("template-parts/portfolio/portfolio","singlepage"); ?>
+    
+    <?php  get_template_part("template-parts/gettag"); ?>
 
   </div>
-  <div class="col-12 col-lg-3  m-0 d-flex flex-row flex-lg-column flex-wrap  justify-content-around ">
+  <div class="col-12 col-lg-3  m-0 d-flex flex-row flex-md-column flex-wrap  justify-content-around ">
         <?php
         $portfolio_arg = array(
                                 'post_type'  => 'haportfolio',
@@ -26,6 +28,9 @@ get_header("single");
       while( $portfolio_items->have_posts() ){
                $portfolio_items->the_post();
                get_template_part("template-parts/portfolio/portfolio","singlepageitem");
+
+
+
         }//end while
 
       }//end if

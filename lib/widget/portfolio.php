@@ -63,7 +63,7 @@ class Portfoliowidget extends WP_Widget
 
             $portfolio_arg = array(
                                     'post_type'  => 'haportfolio',
-                                    'posts_per_page' => 12,
+                                    'posts_per_page' => (int)$instance["numberOfPortfolio"],
 
 
 
@@ -93,6 +93,20 @@ class Portfoliowidget extends WP_Widget
 
   public function form($instance){
 
+    ?>
+    <div class="widefat">
+
+      <p>
+          <label for="<?php echo esc_attr($this->get_field_id("numberOfPortfolio")); ?>"> تعداد نمونه کار</label>
+          <input type="number"
+                 id="<?php echo esc_attr($this->get_field_id("numberOfPortfolio")); ?>"
+                 name="<?php echo esc_attr($this->get_field_name("numberOfPortfolio")); ?>"
+                 value="<?php echo $instance["numberOfPortfolio"] ?>">
+      </p>
+
+    </div>
+
+    <?php
 
     // print_posttype_posts_list($this->get_field_name("test") , "post" ,$instance);
 
