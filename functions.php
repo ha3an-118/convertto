@@ -69,6 +69,17 @@ function ha_widgets_init() {
                                     'before_title'  => '<h2 class="widgettitle">',
                                     'after_title'   => '</h2>',
                                     ) );
+
+    register_sidebar( array(
+                    'name' => __( 'single page header' ),
+                    'id' => 'singlepageheader',
+                    'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+                    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+                    'after_widget'  => '</li>',
+                    'before_title'  => '<h2 class="widgettitle">',
+                    'after_title'   => '</h2>',
+                                                    ) );
+
         }
 
 
@@ -77,4 +88,6 @@ ha_add_widget("aboutus");//function on lib/helper_functions
 ha_add_widget("portfolio");
 ha_add_widget("registerorder");
 ha_add_widget("aboutuspageshow");
+ha_add_widget("slider");
+
  ?>

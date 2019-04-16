@@ -207,51 +207,9 @@
               <!--   start header  button part   -->
 
 
-                          <div class="dg-product-slider ">
-
-                            <div class="" id="productpageslider" role="slider" cycle="5000"  pagination="true" >
-
-                                    <!-- IDEA: slider items  -->
-                                    <div class="" role="sliderItemsHolder">
-
-                                      <div class="dg-product-slider-item" role="sliderItemHolder">
-                                          <img src="<?php echo get_stylesheet_directory_uri()?>/assets/image/2.png" alt="" class="">
-                                          <div class="col-6 dg-product-slider-item-text text-right p-3">
-                                            <h3>این یک هدر است </h3>
-                                            <p class="mt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
-                                          </div>
-
-                                      </div>
-
-                                      <div class="dg-product-slider-item" role="sliderItemHolder">
-                                          <img src="<?php echo get_stylesheet_directory_uri()?>/assets/image/3.png" alt="" class="">
-                                          <div class="col-6 dg-product-slider-item-text text-right p-3">
-                                            <h3>این یک هدر است </h3>
-                                            <p class="mt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
-                                          </div>
-
-                                      </div>
-
-                                    </div>
-
-                                    <div class="" role="sliderNavigation">
+              <?php dynamic_sidebar('singlepageheader'); ?>
 
 
-                                        <!-- IDEA: pager part  -->
-                                        <div class="" role="sliderPaginations" content>
-
-                                        </div>
-                                        <!-- IDEA: next/prevision part -->
-
-                                  </div>
-
-
-                            </div>
-
-
-
-
-                          </div>
 
 
 

@@ -2,6 +2,7 @@
 /**
  *
  */
+ require_once(__DIR__."/../widgets_function.php");
  add_action( 'widgets_init' , function() { register_widget( 'Portfoliowidget' ); } );
 
 
@@ -91,6 +92,10 @@ class Portfoliowidget extends WP_Widget
   }
 
   public function form($instance){
+
+
+    // print_posttype_posts_list($this->get_field_name("test") , "post" ,$instance);
+
     echo "this is test";
   }
   public function update($new_instance,$old_instance){

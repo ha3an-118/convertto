@@ -27,7 +27,7 @@ get_header("single");
       </div>
 
 
-
+</div>
 
 <?php
 
