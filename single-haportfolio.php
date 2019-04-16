@@ -14,6 +14,7 @@ get_header("single");
 
     <?php  get_template_part("template-parts/gettag"); ?>
 
+
   </div>
   <div class="col-12 col-lg-3  m-0 d-flex flex-column    justify-content-start bg-4">
       <div class="text-right text-1 p-3">
