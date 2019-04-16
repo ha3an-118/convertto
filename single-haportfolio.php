@@ -11,11 +11,20 @@ get_header("single");
   <div class="col-12 col-lg-9">
 
     <?php get_template_part("template-parts/portfolio/portfolio","singlepage"); ?>
-    
+
     <?php  get_template_part("template-parts/gettag"); ?>
 
   </div>
-  <div class="col-12 col-lg-3  m-0 d-flex flex-row flex-md-column flex-wrap  justify-content-around ">
+  <div class="col-12 col-lg-3  m-0 d-flex flex-column    justify-content-start bg-4">
+      <div class="text-right text-1 p-3">
+          <h5>
+          نمونه کار های مشابه
+        </h5>
+        <hr class="bg-2">
+      </div>
+      <div class="d-flex flex-wrap justify-content-around">
+
+
         <?php
         $portfolio_arg = array(
                                 'post_type'  => 'haportfolio',
@@ -40,6 +49,7 @@ get_header("single");
 
 
          ?>
+    </div>
   </div>
 
 

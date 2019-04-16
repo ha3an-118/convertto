@@ -1,7 +1,7 @@
 <?php
   $tax = get_taxonomies();
   $terms = get_the_terms($post,$tax);
-  echo "<div class='bg-1 p-3 col-12 d-flex flex-row flex-wrap'>";
+  echo "<div class='bg-1 p-3 col-12 d-flex flex-row flex-wrap my-2'>";
   foreach($terms as $term){
 
     ?>
