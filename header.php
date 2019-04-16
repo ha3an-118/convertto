@@ -21,7 +21,7 @@
     <body >
         <!-- start  header part  -->
 
-           <header class=' text-2 d-flex flex-column dg-nav  dg-slider-bg justify-content-between'>
+           <header class=' text-2 d-flex flex-column dg-nav  dg-slider-bg justify-content-between' style="background-image:url('<?php header_image(); ?>') !important;">
              <!--  start navigation part          -->
               <section class="coustum-header container-fluid">
                <!-- navigation part -->

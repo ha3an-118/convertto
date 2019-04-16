@@ -29,7 +29,7 @@ $custom_logo_arg = array(
 add_theme_support( 'custom-logo' );
 // add_theme_support();
 add_theme_support( 'post-thumbnails' );
-
+add_theme_support( 'custom-header');
 add_action( 'widgets_init', 'ha_widgets_init' );
 function ha_widgets_init() {
     register_sidebar( array(
