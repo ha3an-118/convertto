@@ -3,6 +3,8 @@
 
 // register menu one menu for phone one for social menu and one for top menu
 require_once(__DIR__."/lib/helper_functions.php");
+// require_once(__DIR__."/lib/option.php");
+
 
 function ha_register_menu(){
   $arg = array(
@@ -89,5 +91,13 @@ ha_add_widget("portfolio");
 ha_add_widget("registerorder");
 ha_add_widget("aboutuspageshow");
 ha_add_widget("slider");
+
+
+
+
+
+
+
+
 
  ?>

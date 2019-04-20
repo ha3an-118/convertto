@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/colorpalet.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/font.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/tiFontIcon.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/fontawesome.css">
 
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/portfolio.js"></script>
 
