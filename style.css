@@ -348,6 +348,21 @@ body ,html{
   color: var(--color3);
 
 }
+.dg-cat-aside ul{
+  list-style: none;
+  padding: 0;
+}
+.dg-cat-aside ul li{
+  padding: 1rem;
+
+}
+.dg-cat-aside ul li a{
+  color: var(--color1);
+}
+.dg-cat-aside ul li a:hover{
+  color: var(--color3);
+  text-decoration: none;
+}
 .dg-posts{
   background-image: url(assets/image/s1.svg);
   background-size: 200px;

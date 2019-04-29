@@ -112,7 +112,7 @@
 
               <section id="copyright" class="container-fluid  text-2 d-flex flex-column flex-md-row align-items-center justify-content-between py-2">
 
-                <div class="">
+                <div class="text-center ">
                     تمامی حقوق مادی و معنوی این وب سایت متعلق به شرکت دیجی رسان میباشد
                 </div>
                 <div class="">

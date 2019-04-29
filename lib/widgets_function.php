@@ -31,4 +31,38 @@ function print_posttype_posts_list($idname,$name , $posttype ,$instance){
         </div>
 <?php
 }
+
+
+function print_taxonomies_list($idname,$name ,$instance){
+
+      ?>
+      <div class="widefat" style="margin-top:1rem;">
+          <select class="widefat" name="<?php echo $idname ?>">
+
+      <?php
+
+              $taxs = get_taxonomies();
+
+              foreach($taxs as $tax):
+      ?>
+                            <option value="<?php echo $tax; ?>"
+                              <?php if( $instance[$name]==$tax) { echo "selected"; } ?> >
+                                <?php echo $tax ?>
+                            </option>
+
+              <?php endforeach; ?>
+                  </select>
+
+        </div>
+<?php
+}
+
+
+
+
+
+
+
+
+
 ?>

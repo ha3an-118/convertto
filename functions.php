@@ -66,10 +66,10 @@ function ha_widgets_init() {
                                     'name' => __( 'weblog widget area side' ),
                                     'id' => 'weblogwidgetareaside',
                                     'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
-                                    'before_widget' => '<li id="%1$s" class="widget %2$s">',
-                                    'after_widget'  => '</li>',
-                                    'before_title'  => '<h2 class="widgettitle">',
-                                    'after_title'   => '</h2>',
+                                    'before_widget' => '<div class="dg-cat-aside text-right">',
+                                    'after_widget'  => '</div>',
+                                    'before_title'  => '<a href="#" class="list-group-item dg-list-header">',
+                                    'after_title'   => '</a>',
                                     ) );
 
     register_sidebar( array(
@@ -91,6 +91,7 @@ ha_add_widget("portfolio");
 ha_add_widget("registerorder");
 ha_add_widget("aboutuspageshow");
 ha_add_widget("slider");
+ha_add_widget("sidebarCat");
 
 
 
