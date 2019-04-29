@@ -60,10 +60,17 @@ class Portfoliowidget extends WP_Widget
         <div id="<?php echo esc_attr($this->get_field_id("haPortfolioItems")) ?>" class=" d-flex flex-row flex-wrap justify-content-around ">
 
           <?php
-
+            $posts_id = array();
+            for($index=0 ;$index < (int)$instance["numberOfPortfolio"] ; $index++):
+                if(isset($instance["pageid".$index])):
+                  array_push($posts_id,(int)$instance["pageid".$index]);
+                endif;
+            endfor;
+            
             $portfolio_arg = array(
                                     'post_type'  => 'haportfolio',
                                     'posts_per_page' => (int)$instance["numberOfPortfolio"],
+                                    'post__in' => $posts_id,
 
 
 
@@ -103,6 +110,16 @@ class Portfoliowidget extends WP_Widget
                  name="<?php echo esc_attr($this->get_field_name("numberOfPortfolio")); ?>"
                  value="<?php echo $instance["numberOfPortfolio"] ?>">
       </p>
+      <?php
+      if(isset($instance["numberOfPortfolio"])):
+        for($index=0 ;$index < (int)$instance["numberOfPortfolio"] ; $index++):
+          $name = esc_attr($this->get_field_name("pageid".$index));
+          print_posttype_posts_list($name,"pageid".$index , "haportfolio" ,$instance);
+        endfor;
+      endif;
+
+       ?>
+
 
     </div>
 
