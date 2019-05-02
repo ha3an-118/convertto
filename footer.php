@@ -11,35 +11,11 @@
           <footer id="" class="container-fluid bg-1 dg-footer-bg">
             <!-- contact us part -->
               <section id="contactUsForm" class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto pt-5">
-                <form class="" action="index.html" method="post">
-                  <div class="d-flex flex-column text-Center justify-content-center form-group">
 
 
-                    <label for="" class="text-center flg text-2">ارتباط سریع با ما </label>
-                    <div class="form-group">
-                      <div class="form-row justify-content-between">
-                          <div class="col-9">
-                            <input class="p-2 bg-2 text-1 dg-footer-input form-control "
-                                type="text" name="contactlink" value="" placeholder="پست الکترونیک یا شماره تماس ">
-                          </div>
-                          <div class="col-3">
-                            <input class="btn form-control p-2 bg-2 text-1 dg-footer-input"
-                                  type="submit" name="submit" placeholder="ارسال" value="ارسال">
-                          </div>
-
-                      </div>
+                <?php get_template_part("template-parts/contact_us_form"); ?>
 
 
-                    </div>
-                    <div class="form-group">
-                      <textarea  class="p-2 bg-2 text-1 dg-footer-input form-control "
-                          name="name" rows="8" cols="" width="100%" placeholder="پیغام خود را بنویسید"></textarea>
-
-                    </div>
-
-
-                  </div>
-                </form>
               </section>
           <!-- our link -->
               <section id="ourlink" class="mb-3">
