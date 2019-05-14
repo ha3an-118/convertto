@@ -257,7 +257,9 @@
 
               <section class="d-flex flex-column  flex-sm-row align-items-center justify-content-center mb-5 pb-5">
 
+                <button expandwinid="orderform" class="ha-top-btn " >
                   <div id="btnmotiongraphic" class="dg-bg-spider header-btn mx-5 ">
+
                     <a href="#" class="text-2 hover-text-1">
                       <div class=" dg-test">
                             <div class="dg-test-text">
@@ -276,22 +278,34 @@
                     </div>
                     </a>
                   </div>
+                </button>
 
-
+                    <button expandwinid="orderform" class="ha-top-btn " >
                   <div id="btnWebsite" class="dg-bg-spider mx-5">
                     <a href="#" class="text-2 hover-text-1">
+
                       <div class="dg-test">
                             <div class="dg-test-text">
+
+
                                 طراحی وب سایت
+
+
+
                             </div>
                     </div>
+
                     </a>
                   </div>
-
+                  </button>
 
               </section>
 
               <!--   End  header  button part   -->
+              <?php
+              get_template_part("template-parts/order_form");
+
+               ?>
 
            </header>
 

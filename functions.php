@@ -5,6 +5,9 @@
 require_once(__DIR__."/lib/helper_functions.php");
 // require_once(__DIR__."/lib/option.php");
 require_once(__DIR__."/lib/ajax/handelar.php");
+require_once(__DIR__."/lib/ajax/orderregister.php");
+
+
 
 
 function ha_register_menu(){

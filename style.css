@@ -386,3 +386,9 @@ body ,html{
 [role="haportfolio"]{
   transition: all 1s;
 }
+
+/*--------------------- top btn edit ----------------------------*/
+.ha-top-btn{
+    background: transparent;
+    border: none;
+}
