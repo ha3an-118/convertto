@@ -1,5 +1,10 @@
+<?php
+if( !session_id() ):
+  session_start();
+endif;
+ ?>
 <!DOCTYPE html>
-<html>
+<html style="padding:0 !important; margin:0 !important;">
     <head>
         <meta charset='utf-8' lang='fa'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +22,13 @@
                 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/fontawesome.css">
 
           <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/portfolio.js"></script>
+          <style media="screen">
+          html{
+            padding: 0 !important;
+            margin: 0 !important;
+          }
+
+          </style>
 
 <?php
   $ha_style_option = get_option("hathemeshowmode");
@@ -39,7 +51,7 @@
 
  ?>
 
-
+    <?php wp_head(); ?>
     </head>
     <body >
         <!-- start  header part  -->

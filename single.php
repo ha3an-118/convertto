@@ -22,13 +22,13 @@ get_header("single");
               <?php while(have_posts()): the_post(); ?>
 
                   <?php get_template_part("template-parts/weblog/weblog","single"); ?>
-                  <?php  get_template_part("template-parts/gettag"); ?>
-
-
 
               <?php endwhile; ?>
           <?php endif; ?>
+
           <?php wp_reset_postdata(); ?>
+
+          <?php // get_template_part("template-parts/gettag"); ?>
       </div>
 
 
