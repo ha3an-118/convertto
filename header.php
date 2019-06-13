@@ -4,7 +4,7 @@ if( !session_id() ):
 endif;
  ?>
 <!DOCTYPE html>
-<html style="padding:0 !important; margin:0 !important;>
+<html style="padding:0 !important; margin:0 !important;">
     <head>
         <meta charset='utf-8' lang='fa'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,8 +50,9 @@ endif;
 
          ?>
 
-
+         <!--  start head -->
          <?php wp_head(); ?>
+         <!--  end head -->
     </head>
     <body >
         <!-- start  header part  -->
