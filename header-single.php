@@ -16,6 +16,30 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/tiFontIcon.css">
                 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/fontawesome.css">
 
+          <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/portfolio.js"></script>
+
+<?php
+  $ha_style_option = get_option("hathemeshowmode");
+  if($ha_style_option == '1st'){
+    ?>
+    <style media="screen">
+    .maskimg{
+        mask:none;
+        mask-repeat:no-repeat;
+        mask-position:center;
+        mask-size:contain;
+        transition: all 1s;
+    }
+    </style>
+
+    <?php
+
+  }
+
+
+ ?>
+
+
     </head>
     <body >
         <!-- start  header part  -->

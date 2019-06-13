@@ -24,6 +24,7 @@ get_header("single");
         <hr class="bg-2">
       </div>
       <div class="d-flex flex-wrap justify-content-around">
+        <?php  global $posts_number;  $posts_number=4;?>
           <?php get_template_part("template-parts/relatedpost"); ?>
       </div>
   </div>

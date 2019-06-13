@@ -4,6 +4,8 @@
 * must add after loop
 */
   global $wp_query;
+  global $posts_number;
+  $posts_number = empty($posts_number)?10:$posts_number;
 
 
   if(have_posts()):
@@ -34,10 +36,11 @@
       $queryArg = array(
         'post_type' => $post->post_type,
         'tax_query' => $tax_arg,
-        'posts_per_page' => 4,
+        'posts_per_page' => (int)$posts_number,
         'post__not_in' => array((int)get_the_ID()),
 
       );
+    
       global $ha_slider;
       $ha_slider = new WP_Query($queryArg);
       if($ha_slider->have_posts()):

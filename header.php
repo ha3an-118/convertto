@@ -17,6 +17,28 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/fontawesome.css">
 
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/portfolio.js"></script>
+        <?php
+          $ha_style_option = get_option("hathemeshowmode");
+          if($ha_style_option == '1st'){
+            ?>
+            <style media="screen">
+            .maskimg{
+                mask:none;
+                mask-repeat:no-repeat;
+                mask-position:center;
+                mask-size:contain;
+                transition: all 1s;
+            }
+            </style>
+
+            <?php
+
+          }
+
+
+         ?>
+
+
 
     </head>
     <body >
@@ -254,13 +276,25 @@
 
               </div>
               <!--   start header  button part   -->
-
+              <?php
+                  $page_id = (int)get_option('haorderpage');
+                  $wp_query = new WP_Query(array(
+                    'page_id' => $page_id,
+                  ));
+                  $link = "";
+                  if(have_posts()):
+                    while(have_posts()):
+                      the_post();
+                      $link = get_permalink();
+                    endwhile;
+                  endif;
+               ?>
               <section class="d-flex flex-column  flex-sm-row align-items-center justify-content-center mb-5 pb-5">
 
-                <button expandwinid="orderform" class="ha-top-btn " >
+
                   <div id="btnmotiongraphic" class="dg-bg-spider header-btn mx-5 ">
 
-                    <a href="#" class="text-2 hover-text-1">
+                    <a href="<?php echo $link ?>" class="text-2 hover-text-1">
                       <div class=" dg-test">
                             <div class="dg-test-text">
                             موشن گرافیک
@@ -278,11 +312,11 @@
                     </div>
                     </a>
                   </div>
-                </button>
 
-                    <button expandwinid="orderform" class="ha-top-btn " >
+
+
                   <div id="btnWebsite" class="dg-bg-spider mx-5">
-                    <a href="#" class="text-2 hover-text-1">
+                    <a href="<?php echo $link ?>" class="text-2 hover-text-1">
 
                       <div class="dg-test">
                             <div class="dg-test-text">
@@ -297,15 +331,11 @@
 
                     </a>
                   </div>
-                  </button>
+
 
               </section>
 
               <!--   End  header  button part   -->
-              <?php
-              get_template_part("template-parts/order_form");
-
-               ?>
 
            </header>
 

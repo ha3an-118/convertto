@@ -3,7 +3,7 @@
 
 // register menu one menu for phone one for social menu and one for top menu
 require_once(__DIR__."/lib/helper_functions.php");
-// require_once(__DIR__."/lib/option.php");
+require_once(__DIR__."/lib/admin/option.php");
 require_once(__DIR__."/lib/ajax/handelar.php");
 require_once(__DIR__."/lib/ajax/orderregister.php");
 
