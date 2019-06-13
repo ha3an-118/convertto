@@ -17,16 +17,23 @@
                      );
  ?>
  <!-- Start protofile part  -->
+ <div class="position-fixed" style="z-index:2000">
+
+   <button id="sidebarexpandbtn" expandwinid="portfolioSidebar" class="btn btn-danger" >
+     <i class="ti ti-Line-Allign"></i>
+   </button>
+
+ </div>
  <div class="d-flex flex-row justify-content-between mt-3">
    <!--catgory part -->
-   <div class="col-3 m-0 bg-2">
+   <div class="m-0 bg-2 ha-slider " role="hasidebar">
 
        <ul class="dg-cat-menu p-0 m-0">
          <?php foreach($portfolio_cats as $portfolio_cat ) : ?>
 
              <li class="dg-cat-menu-item d-flex flex-row mt-2 ">
                <div class="col-11 d-flex flex-column justify-content-center bg-4 hover-bg-1 hover-text-2">
-                   <a href="#" class="text-right text-1  " >
+                   <a href="<?php echo get_term_link($portfolio_cat); ?>" class="text-right text-1  " >
                      <?php echo $portfolio_cat->name; ?>
                    </a>
                </div>
@@ -41,7 +48,7 @@
    <!-- end portfolio part -->
 
    <!-- portfolio items part -->
-   <div class="col-9 m-0 d-flex flex-row flex-wrap justify-content-around ">
+   <div class="m-0 d-flex flex-row flex-wrap justify-content-around ha-side-content">
      <?php
      $portfolio_arg = array(
                              'post_type'  => 'haportfolio',
@@ -69,12 +76,20 @@
 
  </div>
 
+
+ <script type="text/javascript">
+
+        $("#sidebarexpandbtn").click(function(){
+          $('[role=hasidebar]').toggleClass("ha-sidebar").toggleClass('ha-sidebar-toggel');
+
+        });
+ </script>
+
  <?php
 
 
 
  dynamic_sidebar('portfoliowidgetarea');
-
 
  get_footer();
 ?>

@@ -392,3 +392,56 @@ body ,html{
     background: transparent;
     border: none;
 }
+/* ------------------------sidebar--------------------------- */
+ .ha-slider{
+   width: 0%;
+   min-width: 0%;
+   max-width: 0%;
+   overflow: hidden;
+   transition: all 1s;
+
+ }
+.ha-sidebar-toggel {
+  width: 80%;
+  min-width: 80%;
+  max-width: 80%;
+  overflow: hidden;
+  transition: all 1s;
+}
+.ha-sidebar-close{
+  width:0;
+  min-width: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 992px) {
+  .ha-slider{
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
+    overflow: hidden;
+    transition: all 1s;
+
+  }
+ .ha-sidebar-toggel {
+   width: 0%;
+   min-width: 0%;
+   max-width: 0%;
+   overflow: hidden;
+   transition: all 1s;
+ }
+}
+
+@media (min-width: 1200px) {
+
+}
