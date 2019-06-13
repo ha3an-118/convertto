@@ -40,9 +40,16 @@
       );
       global $ha_slider;
       $ha_slider = new WP_Query($queryArg);
-      get_template_part("template-parts/portfolio/portfolio","singlepageitem");
+      if($ha_slider->have_posts()):
+        while($ha_slider->have_posts()):
+          $ha_slider->the_post();
+          get_template_part("template-parts/portfolio/portfolio","singlepageitem");
+        endwhile;
 
+      endif;
+      wp_reset_postdata();
     endwhile; //have posts while
-  endif; //have post if
 
+  endif; //have post if
+  wp_reset_postdata();
  ?>
