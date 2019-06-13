@@ -4,9 +4,7 @@
  */
 
 get_header();
-?>
 
-<?php
 
 dynamic_sidebar("sidebar-1");
 

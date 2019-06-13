@@ -24,33 +24,8 @@ get_header("single");
         <hr class="bg-2">
       </div>
       <div class="d-flex flex-wrap justify-content-around">
-
-
-        <?php
-        $portfolio_arg = array(
-                                'post_type'  => 'haportfolio',
-                                'posts_per_page' => 4,
-                              );
-       $portfolio_items = new WP_Query($portfolio_arg);
-
-      if($portfolio_items->have_posts()){
-
-      while( $portfolio_items->have_posts() ){
-               $portfolio_items->the_post();
-               get_template_part("template-parts/portfolio/portfolio","singlepageitem");
-
-
-
-        }//end while
-
-      }//end if
-      else {
-            echo "متاسفانه ننمونه کار پیدا نشد";
-      }
-
-
-         ?>
-    </div>
+          <?php get_template_part("template-parts/relatedpost"); ?>
+      </div>
   </div>
 
 

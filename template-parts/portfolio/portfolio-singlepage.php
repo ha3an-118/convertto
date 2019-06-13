@@ -8,7 +8,7 @@
   <?php while(have_posts()): the_post(); ?>
 
     <div class="">
-
+<?php  ?><?php  ?>
       <?php
       $meta = get_post_meta(get_the_ID(),"aparat-link");
       if(!empty($meta)):
@@ -30,4 +30,5 @@
 
 
   <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
 <?php endif; ?>
