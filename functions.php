@@ -96,7 +96,7 @@ ha_add_widget("registerorder");
 ha_add_widget("aboutuspageshow");
 ha_add_widget("slider");
 ha_add_widget("sidebarCat");
-
+ha_add_widget("partner");
 
 
 
