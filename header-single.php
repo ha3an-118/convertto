@@ -50,8 +50,9 @@ endif;
 
 
  ?>
-
+    <!--  head -->
     <?php wp_head(); ?>
+    <!--  head end  -->
     </head>
     <body >
         <!-- start  header part  -->
