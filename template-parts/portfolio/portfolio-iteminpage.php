@@ -17,7 +17,7 @@
       <div class="pt-2 fr9">
           <?php the_excerpt(); ?>
       </div>
-      <a href="<?php the_permalink(); ?>" class="text-3 hover-text-2"> دیدن نمونه کار </a>
+      <a href="<?php the_permalink(); ?>" class="btn bg-3 text-2 hover-text-2 hover-bg-5"> دیدن نمونه کار </a>
     </div>
   </div>
 
