@@ -160,9 +160,12 @@ endif;
                 <!-- slider part  -->
               </section>
               <!--  End  navigation part          -->
+              <!--   start header  button part   -->
+              <?php dynamic_sidebar('singlepageheader'); ?>
+              <!--   End  header  button part   -->
 
-
-              <div id="topnavphone" class="dgnavphone"
+           </header>
+          <div id="topnavphone" class="dgnavphone"
               beforewidth="100%" beforeheight="0" beforepositiontop="0" beforepositionleft="0"
               afterwidth="100%" afterheight="100%" afterpositiontop="0" afterpositionleft="0" >
                 <div class="contianer-fluid d-flex flex-column">
@@ -201,28 +204,54 @@ endif;
                       <hr class="col-11 mx-auto bg-1" style=" ">
                     </div>
                   </div>
-                  <div id="navSociaiphone" class="d-flex flex-row align-items-center justify-content-center my-2 ">
-                    <a href="#" title="" class="align-self-center px-1">
-                      <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                    </a>
-                    <a href="#" title="" class="align-self-center px-1">
-                      <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                    </a>
-                    <a href="#" title="" class="align-self-center px-1">
-                      <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                    </a>
-                    <a href="#" title="" class="align-self-center px-1">
-                      <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                    </a>
-                  </div>
-                  <div id="navListphone" class=" d-flex flex-column pr-4 align-items-start " style=";">
-                      <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
-                      <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
-                      <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
-                      <a href="#" class=" pr-2 mt-2 text-2 hover-text-3">صفحه اصلی </a>
 
-                  </div>
 
+
+
+                  <?php
+                    $arg_top_menu_social = array(
+                      'menu_class'        => "d-flex flex-row align-self-center  p-0 m-0 pr-3",
+                      'menu_id'           => "",
+                      'container'         => "div",
+                      'container_class'   => "socialmenu d-flex align-items-center justify-content-center ",
+                      'container_id'      => "socialmenutop",
+                      'before'            => "",
+                      'after'             => "",
+                      'link_before'       => "<span class='align-self-center pr-2 text-2 hover-text-3 fmd'>",
+                      'link_after'        => "</span>",
+                      'theme_location'    => "social-menu",
+
+                    );
+
+
+
+                    wp_nav_menu( $arg_top_menu_social );
+
+                    ?>
+
+
+
+
+
+
+
+                  <?php
+                    $arg_top_menu = array(
+                      'menu_class'        => "d-flex flex-column pr-4 align-items-start p-0 m-0 phone-menu-top",
+                      'menu_id'           => "",
+                      'container'         => "div",
+                      'container_class'   => "ha-nav-menu-top d-flex",
+                      'container_id'      => "navList",
+                      'before'            => "",
+                      'after'             => "",
+                      'link_before'       => "<span class=' pr-2 text-2 hover-text-3 fmd pt-3'>",
+                      'link_after'        => "</span>",
+                      'theme_location'    => "top-menu",
+
+                    );
+
+                    wp_nav_menu( $arg_top_menu );
+                    ?>
 
                 </div>
 
@@ -235,21 +264,4 @@ endif;
 
 
               </div>
-              <!--   start header  button part   -->
-
-
-              <?php dynamic_sidebar('singlepageheader'); ?>
-
-
-
-
-
-
-
-
-
-              <!--   End  header  button part   -->
-
-           </header>
-
         <!-- end header part -->
