@@ -8,6 +8,8 @@ endif;
     <head>
         <meta charset='utf-8' lang='fa'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><?php echo bloginfo("name"); ?></title>
+        <meta name="description" content="<?php echo bloginfo("discription"); ?>">
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/bootstrap.css">
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/jquery-3.3.1.js"></script>
@@ -68,7 +70,6 @@ endif;
                         <div class="">
                             <!-- logo of company -->
                             <a href="#" title=" <?php bloginfo("name") ?>"  class="">
-                                <!-- <img  src="logo.png" title="" alt="" height="50px"> -->
                                 <?php the_custom_logo(); ?>
                             </a>
 
@@ -104,15 +105,7 @@ endif;
                       wp_nav_menu( $arg_top_menu );
 
                       ?>
-                    <?php /*
-                    <!--  this is code sample  -->
-                    <!-- <div id="navSociai" class="d-flex flex-row ">
-                      <a href="#" title="" class="align-self-center px-1">
-                        <i class="ti-Line-Home text-2 hover-text-3 ti-lg"></i>
-                      </a>
 
-                    </div> -->
-                     */ ?>
                     <?php
                       $arg_top_menu = array(
                         'menu_class'        => "d-flex flex-row align-self-center p-0 m-0 pr-3",
@@ -134,15 +127,15 @@ endif;
 
                       ?>
 
-
+                    </div>
 
                   <div class="d-flex d-md-none dg-nav py-2 justify-content-between">
                     <div id="navBrand" class="d-flex flex-row ">
 
                         <div class="">
                             <!-- logo of company -->
-                            <a href="#" title="" >
-                                <img  src="logo.png" title="" alt="" height="50px">
+                            <a href="#" title=" <?php bloginfo("name") ?>"  class="">
+                                <?php the_custom_logo(); ?>
                             </a>
 
                         </div>
@@ -151,7 +144,7 @@ endif;
                             <!-- name of company-->
                             <a href="#" title="" class="">
                                 <span class=" pr-2 text-3 hover-text-2" style="font-size:1.2rem;">
-                                    دیجی رسان
+                                    <?php bloginfo("name") ?>
                                 </span>
                             </a>
                         </div>

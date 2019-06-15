@@ -7,7 +7,6 @@
  get_header('single');
 
 
-
  // get all term of taxanamin
 
  $portfolio_cats = get_terms( array(

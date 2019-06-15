@@ -5,9 +5,11 @@
 
 
 $terms = get_the_terms($post,'portfolio_cat');
-foreach($terms as $term):
-  $termid =  ((int)$term->parent == 0)?$term->term_id:0;
-endforeach;
+if(!empty($terms)):
+    foreach($terms as $term):
+    $termid =  ((int)$term->parent == 0)?$term->term_id:0;
+    endforeach;
+endif;
 
 
 ?>

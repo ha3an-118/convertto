@@ -8,6 +8,8 @@ endif;
     <head>
         <meta charset='utf-8' lang='fa'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><?php echo bloginfo("name"); ?></title>
+        <meta name="description" content="<?php echo bloginfo("discription"); ?>">
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/bootstrap.css">
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/jquery-3.3.1.js"></script>

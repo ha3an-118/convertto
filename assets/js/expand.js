@@ -57,7 +57,6 @@ $("[expandwinid]").click(function() {
   //if the befor position is null must get the this position to position
   if(beforewidth == ""){
     beforewidth=$(expandobject).width()+"px";
-    console.log(beforewidth);
   }
   if(beforeheight == ""){
     beforeheight=$(expandobject).height()+"px";
@@ -70,6 +69,8 @@ $("[expandwinid]").click(function() {
   }
 
   //run the attribute
+  window.scrollTo(0, 0);
+  $("body").toggleClass("overflow-hidden");
 
   $(expandobject).css({
                     "position":"absolute",
@@ -95,7 +96,6 @@ $("[expandwinid]").click(function() {
                   "beforepositionleft":afterpositionleft
                   });
 
-  console.log(expandobject);
 });
 
 
