@@ -11,7 +11,7 @@ get_header("single");
   <div class="col-12 col-lg-9">
 
     <?php get_template_part("template-parts/portfolio/portfolio","singlepage"); ?>
-
+    <?php dynamic_sidebar("portfoliowidgetarea"); ?>
     <?php  get_template_part("template-parts/gettag"); ?>
 
 
@@ -23,7 +23,7 @@ get_header("single");
         </h5>
         <hr class="bg-2">
       </div>
-      <?php dynamic_sidebar("portfoliowidgetarea"); ?>
+
       <div class="d-flex flex-wrap justify-content-around">
 
         <?php  global $posts_number;  $posts_number=4;?>
