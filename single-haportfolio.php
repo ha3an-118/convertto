@@ -23,7 +23,9 @@ get_header("single");
         </h5>
         <hr class="bg-2">
       </div>
+      <?php dynamic_sidebar("portfoliowidgetarea"); ?>
       <div class="d-flex flex-wrap justify-content-around">
+
         <?php  global $posts_number;  $posts_number=4;?>
           <?php get_template_part("template-parts/relatedpost"); ?>
       </div>
@@ -38,7 +40,7 @@ get_header("single");
 
 
 
-dynamic_sidebar("portfoliowidgetarea");
+
 get_footer();
 
  ?>
