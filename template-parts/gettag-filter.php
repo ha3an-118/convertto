@@ -9,12 +9,16 @@
       the_post();
       $post_taxs = get_object_taxonomies($post);
       foreach($post_taxs as $post_tax):
-          $terms = get_the_terms($post,$post_tax);
-          if(!empty($terms)):
-              foreach($terms as $term):
-                    array_push($terms_id,(int)$term->term_id);
-              endforeach;
-          endif;
+          if(is_taxonomy_hierarchical($post_tax)):
+            $terms = get_the_terms($post,$post_tax);
+            if(!empty($terms)):
+                foreach($terms as $term):
+
+                      array_push($terms_id,(int)$term->term_id);
+
+                endforeach;
+            endif; //empty condition
+        endif; //hierarchical condition
       endforeach;
     endwhile;
     wp_reset_postdata();
