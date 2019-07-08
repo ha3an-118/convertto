@@ -8,7 +8,7 @@ get_header("single");
 ?>
   <div class="d-flex flex-row flex-nowrap ">
 
-    <div class="col-2 d-flex flex-column p-0 m-0">
+    <div class="col-lg-3 d-none d-lg-flex flex-column p-0 m-0">
 
         <div class="dg-cat-aside">
 
@@ -17,7 +17,7 @@ get_header("single");
         </div>
     </div>
 
-    <div class="dg-posts col-10 d-flex flex-wrap jastify-content-between ">
+    <div class="dg-posts col-12 col-lg-9 d-flex flex-wrap jastify-content-between ">
 
       <?php
       $portfolio_arg = array(
@@ -47,7 +47,7 @@ get_header("single");
 
 
 <?php
-
+print_sidebar("weblogwidgetareaside");
 
 dynamic_sidebar("weblogwidgetarea");
 get_footer();

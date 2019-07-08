@@ -44,25 +44,12 @@
 
  </div>
 
- <div class="fixed-bottom d-block d-lg-none " style="left:unset !important;">
-   <button expandwinid="portfolio_sidebar_widget_area" class="btn btn-danger" >
 
-     <i class="fas fa-filter fa-2x fa-spin"></i>
-   </button>
- </div>
 
- <div id="portfolio_sidebar_widget_area" class="dgnavphone"
-     beforewidth="0%" beforeheight="0" beforepositiontop="0" beforepositionleft="0"
-     afterwidth="100%" afterheight="100%" afterpositiontop="0" afterpositionleft="0" >
-     <div class="align-self-center">
-       <button expandwinid="portfolio_sidebar_widget_area" class="btn btn-danger" >
-         <i class="fa fa-times fa-2x fa-spin"></i>
-       </button>
-     </div>
-      <?php dynamic_sidebar('portfoliowidgetareaside') ?>
-
-</div>
  <?php
+ print_sidebar("portfoliowidgetareaside");
+
+
  dynamic_sidebar('portfoliowidgetarea');
 
  get_footer();

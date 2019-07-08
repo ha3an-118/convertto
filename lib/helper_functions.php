@@ -21,7 +21,7 @@ function view_counter(){
           the_post();
           $view = get_post_meta(get_the_ID(),"ha-view",true);
           if(empty($view)):
-          
+
             add_post_meta(get_the_ID(),"ha-view",'1',true);
           else:
             $view_temp = (int)$view[0]+1;
@@ -36,5 +36,15 @@ function view_counter(){
   endif;//sesion
 }
 
+
+
+function print_sidebar($sidebar_id)
+{
+
+  global $sidebarID ;
+  $sidebarID  = $sidebar_id;
+  get_template_part("template-parts/sidebarTemp");
+
+}
 
  ?>

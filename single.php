@@ -9,14 +9,14 @@ get_header("single");
 <div class="d-flex flex-row flex-nowrap pt-5 ">
 
   <!-- =================== aside ========================  -->
-      <div class="col-2 d-flex flex-column p-0 m-0">
+      <div class="col-lg-3 d-none d-lg-flex flex-column p-0 m-0">
 
           <div class="dg-cat-aside">
             <?php dynamic_sidebar('weblogwidgetareaside'); ?>
           </div>
       </div>
 
-      <div class="dg-posts col-10 d-flex flex-column jastify-content-between ">
+      <div class="dg-posts col-12 col-lg-9 d-flex flex-column jastify-content-between ">
 
           <?php if(have_posts()): ?>
               <?php while(have_posts()): the_post(); ?>
@@ -36,8 +36,10 @@ get_header("single");
 
 <?php
 
+print_sidebar("weblogwidgetareaside");
 
 dynamic_sidebar("weblogwidgetarea");
+
 get_footer();
 
 
