@@ -3,52 +3,20 @@
 * Template Name: portfolio
 *
 */
-
  get_header('single');
-
-
-
- // get all term of taxanamin
-
- $portfolio_cats = get_terms( array(
-                       'taxonomy' => 'portfolio_cat',
-                       'hide_empty' => false,
-                       )
-                     );
  ?>
- <!-- Start protofile part  -->
- <div class="position-fixed" style="z-index:2000">
 
-   <button id="sidebarexpandbtn" expandwinid="portfolioSidebar" class="btn btn-danger" >
-     <i class="ti ti-Line-Allign"></i>
-   </button>
-
- </div>
  <div class="d-flex flex-row justify-content-between mt-3">
-   <!--catgory part -->
-   <div class="m-0 bg-2 ha-slider " role="hasidebar">
+   <!--side bar -->
+   <div class="m-0 bg-2 col-lg-3 d-none d-lg-flex flex-column">
 
-       <ul class="dg-cat-menu p-0 m-0">
-         <?php foreach($portfolio_cats as $portfolio_cat ) : ?>
-
-             <li class="dg-cat-menu-item d-flex flex-row mt-2 ">
-               <div class="col-11 d-flex flex-column justify-content-center bg-4 hover-bg-1 hover-text-2">
-                   <a href="<?php echo get_term_link($portfolio_cat); ?>" class="text-right text-1  " >
-                     <?php echo $portfolio_cat->name; ?>
-                   </a>
-               </div>
-               <div class="col-1 bg-4 h-100"></div>
-
-             </li>
-
-       <?php endforeach; ?>
-       </ul>
+      <?php dynamic_sidebar('portfoliowidgetareaside') ?>
 
    </div>
-   <!-- end portfolio part -->
+   <!-- end side bar  -->
 
-   <!-- portfolio items part -->
-   <div class="m-0 d-flex flex-row flex-wrap justify-content-around ha-side-content">
+   <!-- content part -->
+   <div class="m-0 d-flex flex-row flex-wrap justify-content-around col-12 col-lg-9">
      <?php
      $portfolio_arg = array(
                              'post_type'  => 'haportfolio',
@@ -72,23 +40,29 @@
 
 
    </div>
-
+   <!-- end content part -->
 
  </div>
 
+ <div class="fixed-bottom d-block d-lg-none " style="left:unset !important;">
+   <button expandwinid="portfolio_sidebar_widget_area" class="btn btn-danger" >
 
- <script type="text/javascript">
+     <i class="fas fa-filter fa-2x fa-spin"></i>
+   </button>
+ </div>
 
-        $("#sidebarexpandbtn").click(function(){
-          $('[role=hasidebar]').toggleClass("ha-sidebar").toggleClass('ha-sidebar-toggel');
+ <div id="portfolio_sidebar_widget_area" class="dgnavphone"
+     beforewidth="0%" beforeheight="0" beforepositiontop="0" beforepositionleft="0"
+     afterwidth="100%" afterheight="100%" afterpositiontop="0" afterpositionleft="0" >
+     <div class="align-self-center">
+       <button expandwinid="portfolio_sidebar_widget_area" class="btn btn-danger" >
+         <i class="fa fa-times fa-2x fa-spin"></i>
+       </button>
+     </div>
+      <?php dynamic_sidebar('portfoliowidgetareaside') ?>
 
-        });
- </script>
-
+</div>
  <?php
-
-
-
  dynamic_sidebar('portfoliowidgetarea');
 
  get_footer();

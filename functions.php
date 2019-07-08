@@ -75,7 +75,15 @@ function ha_widgets_init() {
                                     'before_title'  => '<a href="#" class="list-group-item dg-list-header">',
                                     'after_title'   => '</a>',
                                     ) );
-
+    register_sidebar( array(
+                         'name' => __( 'portfolio widget area side' ),
+                         'id' => 'portfoliowidgetareaside',
+                         'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+                         'before_widget' => '<div class="dg-cat-aside text-right">',
+                         'after_widget'  => '</div>',
+                         'before_title'  => '<a href="#" class="list-group-item dg-list-header">',
+                         'after_title'   => '</a>',
+                      ) );
     register_sidebar( array(
                     'name' => __( 'single page header' ),
                     'id' => 'singlepageheader',

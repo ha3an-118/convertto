@@ -4,7 +4,6 @@
 *
 */
 get_header("single");
-
 ?>
   <div class="d-flex flex-row flex-nowrap ">
 
@@ -21,7 +20,7 @@ get_header("single");
 
       <?php
 
-      
+
 
       if(have_posts()){
 
