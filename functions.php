@@ -37,6 +37,7 @@ add_theme_support( 'custom-logo' );
 add_theme_support( 'post-thumbnails' );
 
 add_image_size('portfolio-item',405,228,true);
+add_image_size('business-kit-services', 370, 280, true);
 
 
 
