@@ -25,15 +25,13 @@ function view_counter(){
             add_post_meta(get_the_ID(),"ha-view",'1',true);
           else:
             $view_temp = (int)$view[0]+1;
-            update_post_meta(get_the_ID(),"ha-view",$view_temp,true);
+            update_post_meta(get_the_ID(),"ha-view",$view_temp);
 
           endif;
         endwhile;
 
       endif;
-  else:
-
-  endif;//sesion
+  endif;//session
 }
 
 
