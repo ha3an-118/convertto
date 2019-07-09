@@ -93,6 +93,15 @@ function ha_widgets_init() {
                     'before_title'  => '<h2 class="widgettitle">',
                     'after_title'   => '</h2>',
                                                     ) );
+    register_sidebar( array(
+                    'name' => __( 'about us widget area' ),
+                    'id' => 'aboutuswidgetarea',
+                    'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+                    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+                    'after_widget'  => '</li>',
+                    'before_title'  => '<h2 class="widgettitle">',
+                    'after_title'   => '</h2>',
+                                                    ) );
 
         }
 
