@@ -16,31 +16,38 @@
    <!-- end side bar  -->
 
    <!-- content part -->
-   <div class="m-0 d-flex flex-row flex-wrap justify-content-around col-12 col-lg-9">
+   <div class="m-0 d-flex flex-column  col-12 col-lg-9">
      <?php
+
+    if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
+    elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
+    else { $paged = 1; }
+    global $wp_query;
      $portfolio_arg = array(
                              'post_type'  => 'haportfolio',
-                             'posts_per_page' => 30,
+                             'paged' => $paged,
                            );
-     $portfolio_items = new WP_Query($portfolio_arg);
+     $wp_query = new WP_Query($portfolio_arg);
 
-     if($portfolio_items->have_posts()){
-
-       while( $portfolio_items->have_posts() ){
-          $portfolio_items->the_post();
+     if($wp_query->have_posts()){
+       echo("<div class='m-0 d-flex flex-row flex-wrap justify-content-around'>");
+       while( $wp_query->have_posts() ){
+          $wp_query->the_post();
           get_template_part("template-parts/portfolio/portfolio","iteminpage");
        }//end while
+       echo("</div>");
+       wp_reset_postdata();
 
+       get_template_part('template-parts/pagination');
      }//end if
      else {
        echo "متاسفانه ننمونه کار پیدا نشد";
      }
 
       ?>
+      </div> <!-- end content part -->
 
 
-   </div>
-   <!-- end content part -->
 
  </div>
 

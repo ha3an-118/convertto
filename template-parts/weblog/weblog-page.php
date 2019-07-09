@@ -15,7 +15,7 @@
         <article class="pt-2">
 
 
-            <?php the_content(); ?>
+            <?php the_excerpt(); ?>
 
 
         </article>

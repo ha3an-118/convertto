@@ -17,22 +17,29 @@ get_header("single");
         </div>
     </div>
 
-    <div class="dg-posts col-12 col-lg-9 d-flex flex-wrap jastify-content-between ">
+    <div class="dg-posts col-12 col-lg-9 d-flex flex-column ">
 
       <?php
+        if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
+        elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
+        else { $paged = 1; }
+        global $wp_query;
       $portfolio_arg = array(
                               'post_type'  => 'post',
-                              'posts_per_page' => 30,
+                              'paged' => $paged,
                             );
-      $portfolio_items = new WP_Query($portfolio_arg);
+      $wp_query = new WP_Query($portfolio_arg);
 
-      if($portfolio_items->have_posts()){
+      if($wp_query->have_posts()){
 
-        while( $portfolio_items->have_posts() ){
-           $portfolio_items->the_post();
+       echo("<div class='m-0 d-flex flex-row flex-wrap justify-content-around'>");
+        while( $wp_query->have_posts() ){
+           $wp_query->the_post();
            get_template_part("template-parts/weblog/weblog","page");
         }//end while
+        echo("</div>");
         wp_reset_postdata();
+        get_template_part('template-parts/pagination');
       }//end if
       else {
         echo "متاسفانه ننمونه کار پیدا نشد";

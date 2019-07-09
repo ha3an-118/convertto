@@ -7,7 +7,7 @@ get_header("single");
 ?>
   <div class="d-flex flex-row flex-nowrap ">
 
-    <div class="col-2 d-flex flex-column p-0 m-0">
+    <div class="col-3 d-flex flex-column p-0 m-0">
 
         <div class="dg-cat-aside">
 
@@ -16,7 +16,7 @@ get_header("single");
         </div>
     </div>
 
-    <div class="dg-posts col-10 d-flex flex-wrap jastify-content-between ">
+    <div class="dg-posts col-9 d-flex flex-column ">
 
       <?php
 
@@ -24,11 +24,15 @@ get_header("single");
 
       if(have_posts()){
 
+       echo("<div class='m-0 d-flex flex-row flex-wrap justify-content-around'>");
         while(have_posts() ){
            the_post();
            get_template_part("template-parts/weblog/weblog","page");
         }//end while
+        echo("</div>");
         wp_reset_postdata();
+
+        get_template_part('template-parts/pagination');
       }//end if
       else {
         echo "متاسفانه ننمونه کار پیدا نشد";
