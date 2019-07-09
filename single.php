@@ -17,7 +17,7 @@ get_header("single");
       </div>
 
       <div class="dg-posts col-12 col-lg-9 d-flex flex-column jastify-content-between ">
-
+      <?php get_template_part("template-parts/breadcrumb"); ?>  
           <?php if(have_posts()): ?>
               <?php while(have_posts()): the_post(); ?>
 

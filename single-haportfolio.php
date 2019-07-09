@@ -10,6 +10,7 @@ get_header("single");
 
   <div class="col-12 col-lg-9">
 
+    <?php get_template_part("template-parts/breadcrumb"); ?>  
     <?php get_template_part("template-parts/portfolio/portfolio","singlepage"); ?>
     <?php dynamic_sidebar("portfoliowidgetarea"); ?>
     <?php  get_template_part("template-parts/gettag"); ?>

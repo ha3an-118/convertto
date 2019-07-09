@@ -11,6 +11,10 @@ body ,html{
   margin: 0;
   direction: rtl;
 }
+a , a:hover ,a:focus ,a:active{
+  text-decoration: none;
+}
+
  /* ---------------- special font size ------------------*/
  .fsm{
    font-size: .5rem !important;
@@ -90,6 +94,15 @@ body ,html{
 
   }
   /* ------------------header btn ------------------- */
+  .aparat-logo:before{
+    content: "";
+    width: 4em;
+    height: 4em;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("assets/image/aparat_icon_color_black_64.png") !important;
+  }
   /* ------------------ svg style ------------------- */
   .dg-svgitem{
         overflow:visible !important;
@@ -333,6 +346,8 @@ body ,html{
 }
 .dg-product-slider-item-text{
   z-index: 1000;
+  display: inline-block;
+  float: right;
   position: relative;
   bottom: 50%;
   background-color: rgba(62,62,62,.5) !important;

@@ -7,7 +7,7 @@ get_header("single");
 ?>
   <div class="d-flex flex-row flex-nowrap ">
 
-    <div class="col-3 d-flex flex-column p-0 m-0">
+    <div class="col-lg-3 d-none  d-lg-flex flex-column p-0 m-0">
 
         <div class="dg-cat-aside">
 
@@ -16,11 +16,11 @@ get_header("single");
         </div>
     </div>
 
-    <div class="dg-posts col-9 d-flex flex-column ">
-
+    <div class="dg-posts col-12 col-lg-9 d-flex flex-column ">
+ 
       <?php
 
-
+      get_template_part("template-parts/breadcrumb");
 
       if(have_posts()){
 
@@ -48,6 +48,7 @@ get_header("single");
 
 <?php
 
+print_sidebar("weblogwidgetareaside");
 
 dynamic_sidebar("weblogwidgetarea");
 get_footer();

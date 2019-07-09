@@ -22,14 +22,15 @@ class SliderWidget extends WP_Widget
         $slidenumber = (int)$instance["SlidesNumber"];
         $cycleTime = ((int)$instance["SlidesTime"])*1000;
         $cycleOption = $instance["slideing"];
+        $paginationOption = $instance["pagination"];
         ?>
         <div class="dg-product-slider ">
 
           <div class="" id="<?php echo esc_attr($this->get_field_id("productpageslider")); ?>"
                 role="slider"
                 <?php echo ($cycleOption=="on")?"cycle=".$cycleTime:"" ?>
-                  pagination="true" >
-                  <!-- IDEA: slider items  -->
+                <?php   echo ($paginationOption == "on")? 'pagination="true"':'';  ?> > 
+                   <!-- IDEA: slider items  -->
                   <div class="" role="sliderItemsHolder">
 
                     <?php
@@ -167,6 +168,16 @@ class SliderWidget extends WP_Widget
                  >
       </p>
 
+     <p class="ha-d-flex ha-justify-between">
+        <label for="<?php echo esc_attr($this->get_field_id("pagination")); ?>">
+            نشانگر صفحه
+        </label>
+        <input type="checkbox"
+               id="<?php echo esc_attr($this->get_field_id("pagination")); ?>"
+                name="<?php echo esc_attr($this->get_field_name("pagination")); ?>"
+                <?php echo  (isset($instance["pagination"])&&$instance["pagination"]=="on")?"checked":""; ?>
+                 >
+      </p>
       <p class="ha-d-flex ha-justify-between">
         <label for="<?php echo esc_attr($this->get_field_id("SlideNavigation")); ?>">
           دکمه جلو و عقب

@@ -33,6 +33,82 @@ class RegisterOrder extends WP_Widget
      ?>
     <section name="order">
 
+        <div class="container">
+
+
+
+            <ol class="ha-list-style-none d-flex flex-row flex-wrap justify-content-around ">
+              <li>
+                  <a href="<?php echo $instance['instagram']; ?>" >
+                    <div class="d-flex flex-column align-item-center" id="hainstagram">
+                        <i class="fab fa-instagram fa-4x text-4 hover-text-3 text-center"></i>
+                        <strong class="text-3 hover-text-4 pt-2">اینستاگرام</strong>
+                    </div>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="<?php echo $instance['telegram']; ?>" >
+                    <div class="d-flex flex-column align-item-center" id="hainstagram">
+                        <i class="fab fa-telegram fa-4x text-4 hover-text-3 text-center"></i>
+                        <strong class="text-3 hover-text-4 pt-2">
+                              تلگرام
+                        </strong>
+                    </div>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="<?php echo $instance['aparat']; ?>" >
+                    <div class="d-flex flex-column align-item-center" id="hainstagram">
+                        <i class="aparat-logo  text-4 hover-text-3 text-center"></i>
+                        <strong class="text-3 hover-text-4 pt-2">
+                            آپارات
+                        </strong>
+                    </div>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="<?php echo $instance['youtube']; ?>" >
+                    <div class="d-flex flex-column align-item-center" id="hainstagram">
+                        <i class="fab fa-youtube-square fa-4x text-4 hover-text-3 text-center"></i>
+                        <strong class="text-3 hover-text-4 pt-2">
+                          یوتیوب
+                        </strong>
+                    </div>
+                  </a>
+              </li>
+
+              <li>
+
+                    <div class="d-flex flex-row  flex-md-column align-item-center" id="hainstagram">
+                        <i class="fa fa-phone fa-4x text-4 hover-text-3 text-center"></i>
+                        <strong class="text-3 hover-text-4 pt-2 align-self-center">
+                          <?php echo $instance['phone1']; ?>
+                        </strong>
+                        <div class="d-md-none">
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+
+                        <strong class="text-3 hover-text-4 pt-2 align-self-center">
+
+                          <?php echo $instance['phone2']; ?>
+
+                        </strong>
+                    </div>
+
+              </li>
+
+
+            </ol>
+
+
+
+
+
+        </div>
+
         <div class="text-right mt-3 p-3">
             <h4>
               <?php echo $instance['title']; ?>
@@ -91,6 +167,48 @@ class RegisterOrder extends WP_Widget
                id="<?php echo esc_attr($this->get_field_id("title")); ?>"
                name="<?php echo esc_attr($this->get_field_name("title")); ?>"
                value="<?php echo $instance["title"] ?>">
+    </p>
+    <p>
+        <label for="<?php echo esc_attr($this->get_field_id("instagram")); ?>"> instagram </label>
+        <input type="text"
+               id="<?php echo esc_attr($this->get_field_id("instagram")); ?>"
+               name="<?php echo esc_attr($this->get_field_name("instagram")); ?>"
+               value="<?php echo $instance["instagram"] ?>">
+    </p>
+    <p>
+        <label for="<?php echo esc_attr($this->get_field_id("telegram")); ?>">telegram</label>
+        <input type="text"
+               id="<?php echo esc_attr($this->get_field_id("telegram")); ?>"
+               name="<?php echo esc_attr($this->get_field_name("telegram")); ?>"
+               value="<?php echo $instance["telegram"] ?>">
+    </p>
+    <p>
+        <label for="<?php echo esc_attr($this->get_field_id("youtube")); ?>">youtube</label>
+        <input type="text"
+               id="<?php echo esc_attr($this->get_field_id("youtube")); ?>"
+               name="<?php echo esc_attr($this->get_field_name("youtube")); ?>"
+               value="<?php echo $instance["youtube"] ?>">
+    </p>
+    <p>
+        <label for="<?php echo esc_attr($this->get_field_id("aparat")); ?>">aparat</label>
+        <input type="text"
+               id="<?php echo esc_attr($this->get_field_id("aparat")); ?>"
+               name="<?php echo esc_attr($this->get_field_name("aparat")); ?>"
+               value="<?php echo $instance["aparat"] ?>">
+    </p>
+    <p>
+        <label for="<?php echo esc_attr($this->get_field_id("phone1")); ?>">phone1</label>
+        <input type="text"
+               id="<?php echo esc_attr($this->get_field_id("phone1")); ?>"
+               name="<?php echo esc_attr($this->get_field_name("phone1")); ?>"
+               value="<?php echo $instance["phone1"] ?>">
+    </p>
+    <p>
+        <label for="<?php echo esc_attr($this->get_field_id("phone2")); ?>">phone2</label>
+        <input type="text"
+               id="<?php echo esc_attr($this->get_field_id("phone2")); ?>"
+               name="<?php echo esc_attr($this->get_field_name("phone2")); ?>"
+               value="<?php echo $instance["phone2"] ?>">
     </p>
     <?php
   }

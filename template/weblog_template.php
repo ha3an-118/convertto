@@ -19,6 +19,7 @@ get_header("single");
 
     <div class="dg-posts col-12 col-lg-9 d-flex flex-column ">
 
+    <?php get_template_part("template-parts/breadcrumb"); ?>  
       <?php
         if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
         elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }

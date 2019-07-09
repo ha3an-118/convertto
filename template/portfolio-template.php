@@ -15,8 +15,13 @@
    </div>
    <!-- end side bar  -->
 
+
+
    <!-- content part -->
    <div class="m-0 d-flex flex-column  col-12 col-lg-9">
+
+
+      <?php get_template_part("template-parts/breadcrumb"); ?>  
      <?php
 
     if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }

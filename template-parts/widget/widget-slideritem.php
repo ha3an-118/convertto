@@ -1,6 +1,6 @@
 <div class="dg-product-slider-item" role="sliderItemHolder">
     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="">
-    <div class="col-6 dg-product-slider-item-text text-right p-3">
+    <div class=" dg-product-slider-item-text text-right p-3">
       <h3>
       <?php the_title(); ?>
       </h3>
