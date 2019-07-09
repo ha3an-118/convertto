@@ -77,7 +77,7 @@
   function sendOrderAjax(){
 
 
-
+    
 
 
     var data = {

@@ -9,7 +9,7 @@
 
   <div class="w-100">
     <div class="w-100">
-      <img class=" maskimg img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+      <img class=" maskimg img-fluid" src="<?php echo get_the_post_thumbnail_url('portfolio-item'); ?>" alt="">
     </div>
 
     <div class="h-100 protofile-text  flex-column justify-content-center text-center text-2 container-fluid  ">
