@@ -8,7 +8,6 @@
   <?php while(have_posts()): the_post(); ?>
 
     <div class="">
-<?php  ?><?php  ?>
       <?php
       $meta = get_post_meta(get_the_ID(),"aparat-link");
       $meta_website = get_post_meta(get_the_ID(),"site-link");
@@ -18,20 +17,21 @@
         ?>
 
         <a href="<?php echo $meta_website[0] ?>">
-          <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title() ?>" class="img-fluid mh-70%" style="max-height:400px; min-width:100%;">
+          <?php the_post_thumbnail("ha-singlepage",['class' => 'img-fluid ']); ?>
         </a>
         <?php
       else:
        ?>
-          <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="img-fluid mh-70%" style="max-height:400px; min-width:100%;">
+          
+          <?php the_post_thumbnail("ha-singlepage",['class' => 'img-fluid d-flex mx-auto']); ?>
       <?php
     endif;
         ?>
     </div>
-    <div class=" text-right pt-5 pr-5">
+    <div class=" text-right pt-5 container p-0 p-md-1">
 
         <h3 class="mb-5 "><?php the_title(); ?> </h3>
-        <div class="">
+        <div class="p-0 m-o text-justify text-md-right">
             <?php the_content(); ?>
         </div>
     </div>

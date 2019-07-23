@@ -2,8 +2,8 @@
 
   <!-- ================ post media ============== -->
 
-      <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid " style="max-height:50%;width:100%" alt="">
-
+      
+      <?php the_post_thumbnail("ha-singlepage",['class' => 'img-fluid ']); ?>
 
   <!-- =============== post context ============= -->
   <section class="text-right pt-4">

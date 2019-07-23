@@ -3,7 +3,7 @@
 
       <!-- ============ picture of post ========= -->
       <div class="">
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" class="maskimg img-fluid" alt="">
+            <?php the_post_thumbnail("portfolio-item",['class' => 'maskimg img-fluid']); ?>
       </div>
       <!-- =========== text of the post ========= -->
       <section class="text-center">
@@ -13,11 +13,7 @@
           </a>
         </header>
         <article class="pt-2">
-
-
             <?php the_excerpt(); ?>
-
-
         </article>
       </section>
 

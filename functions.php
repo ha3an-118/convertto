@@ -7,7 +7,10 @@ require_once(__DIR__."/lib/admin/option.php");
 require_once(__DIR__."/lib/ajax/handelar.php");
 require_once(__DIR__."/lib/ajax/orderregister.php");
 
-
+function my_theme_load_theme_textdomain() {
+  load_theme_textdomain( 'convertto', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'my_theme_load_theme_textdomain' );
 
 
 function ha_register_menu(){
@@ -37,8 +40,8 @@ add_theme_support( 'custom-logo' );
 add_theme_support( 'post-thumbnails' );
 
 add_image_size('portfolio-item',405,228,true);
-add_image_size('business-kit-services', 370, 280, true);
-
+add_image_size('ha-icon',50,50,true);
+add_image_size('ha-singlepage',1200,400,true);
 
 
 add_theme_support( 'custom-header');

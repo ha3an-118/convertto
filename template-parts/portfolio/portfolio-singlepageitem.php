@@ -10,7 +10,8 @@
 
   <div class="w-100 ">
     <div class="w-100">
-      <img class=" maskimg img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'portfolio-item'); ?>" alt="">
+    
+      <?php the_post_thumbnail("portfolio-item",['class' => 'maskimg img-fluid']); ?>
     </div>
 
     <div class="flex-column justify-content-center text-center text-1 container-fluid  ">

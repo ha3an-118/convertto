@@ -5,7 +5,7 @@
 
 get_header();
 
-
+echo _e("test");
 dynamic_sidebar("sidebar-1");
 
 
