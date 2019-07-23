@@ -3,7 +3,7 @@
   <!-- ================ post media ============== -->
 
       
-      <?php the_post_thumbnail("ha-singlepage",['class' => 'img-fluid ']); ?>
+      <?php the_post_thumbnail("ha-singlepage",['class' => 'img-fluid d-flex mx-auto ']); ?>
 
   <!-- =============== post context ============= -->
   <section class="text-right pt-4">
