@@ -474,3 +474,7 @@ a , a:hover ,a:focus ,a:active{
 .overflow-hidden{
   overflow: hidden !important;
 }
+.socialmenu .menu-item{
+  display: flex;
+  align-items:center;
+}
