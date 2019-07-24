@@ -210,7 +210,7 @@ endif;
 
                   <?php
                     $arg_top_menu_social = array(
-                      'menu_class'        => "d-flex flex-row align-self-center  p-0 m-0 pr-3",
+                      'menu_class'        => "d-flex flex-row align-self-center flex-wrap justify-content-between p-0 m-0 pr-3",
                       'menu_id'           => "",
                       'container'         => "div",
                       'container_class'   => "socialmenu d-flex align-items-center justify-content-center ",
