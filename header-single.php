@@ -111,7 +111,7 @@ endif;
                         'menu_class'        => "d-flex flex-row align-self-center p-0 m-0 pr-3",
                         'menu_id'           => "",
                         'container'         => "div",
-                        'container_class'   => "socialmenu d-flex pl-3",
+                        'container_class'   => "socialmenu d-flex pl-3 d-flex align-items-center",
                         'container_id'      => "socialmenutop",
                         'before'            => "",
                         'after'             => "",
