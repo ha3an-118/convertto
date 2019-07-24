@@ -105,12 +105,7 @@ afterwidth="100%" afterheight="100%" afterpositiontop="0" afterpositionleft="0" 
     //ajaxurl = my_ajax_obj.ajax_url;
     ajaxurl = '<?php echo get_bloginfo("wpurl")."/wp-admin/admin-ajax.php";  ?>';
     jQuery.post(ajaxurl, data, function(response) {
-          if(response != '0'){
-            alert('سفارش شما  ثبت شده است در اولین فرصت با شما تماس خواهد گرفته شد'+response);
-          }
-          else{
-            alert("خطایی رخ داده است با تیم پشتیبانی تماس بگیرید یا دوباره امتحان کنید");
-          }
+       alert(response);
     });
   }
 

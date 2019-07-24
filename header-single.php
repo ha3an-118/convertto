@@ -59,9 +59,9 @@ endif;
     <body >
         <!-- start  header part  -->
 
-          <header class=' text-2 d-flex flex-column dg-header    justify-content-between'>
+          <header class=' text-2 d-flex flex-column dg-header    justify-content-between' style="z-index:1;">
              <!--  start navigation part          -->
-              <section class="coustum-header container-fluid">
+              <section class="coustum-header container-fluid" style="z-index:-2">
                <!-- navigation part -->
                 <nav class="" >
                   <div class="py-2  d-md-flex flex-row dg-nav d-none">
