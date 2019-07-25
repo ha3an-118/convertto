@@ -95,6 +95,22 @@ function ha_print_admin_form(){
           </td>
         </tr>
 <!-- ############################################# -->
+        <tr>
+          <th>
+              <label for="hathemeshowmode">
+                  متن کلید صفحه
+               </label>
+          </th>
+          <td>
+              <input type="text" name="habtntext1" value='<?php echo get_option("habtntext1") ?>'>
+              <input type="text" name="habtntext2" value='<?php echo get_option("habtntext2") ?>'>
+              <p class="description">
+              این قسمت برای نوشتن های کلید در صفحه اصلی و ابزارک ثبت سفارش میباشد
+              </p>
+
+          </td>
+        </tr>
+<!-- ############################################# -->
       </table>
       <p>
           <input type="submit" name="submit" value="ذخیره تغییرات " class="button button-primary">
@@ -117,6 +133,10 @@ function ha_set_default_option(){
   add_option('haorderpage','0');
   add_option('haportfoliopage','0');
   add_option('haweblogpage','0');
+  add_option('habtntext1','animation');
+  add_option('habtntext2','webdesine');
+
+
 
 
 
@@ -135,6 +155,8 @@ function ha_update_option(){
   update_option("haorderpage",$_POST['haorderpage']);
   update_option('haportfoliopage',$_POST['haportfoliopage']);
   update_option('haweblogpage',$_POST['haweblogpage']);
+  update_option('habtntext1',$_POST['habtntext1']);
+  update_option('habtntext2',$_POST['habtntext2']);
 
 }
 

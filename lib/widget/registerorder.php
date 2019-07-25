@@ -128,7 +128,10 @@ class RegisterOrder extends WP_Widget
               <div class="dg-btn-spider dg-btn-spider-forground" commnet="this is for absolute position that contian background spider "></div>
 
               <div class="dg-btn-spider-normal-content text-center d-flex  justify-content-center">
-                  <a href="<?php echo $link ?>" class="flg text-2  hover-text-1 align-self-center"> موشن گرافیک</a>
+                  <a href="<?php echo $link ?>" class="flg text-2  hover-text-1 align-self-center">
+                   
+                                <?php echo get_option('habtntext1'); ?>
+                   </a>
               </div>
 
 
@@ -145,7 +148,10 @@ class RegisterOrder extends WP_Widget
               <div class="dg-btn-spider dg-btn-spider-forground" commnet="this is for absolute position that contian background spider "></div>
 
               <div class="dg-btn-spider-normal-content text-center d-flex  justify-content-center">
-                  <a href="<?php echo $link ?>" class="flg text-2  hover-text-1 align-self-center">طراحی وب سایت</a>
+                  <a href="<?php echo $link ?>" class="flg text-2  hover-text-1 align-self-center">
+                  
+                                <?php echo get_option('habtntext2'); ?>
+                  </a>
               </div>
 
 

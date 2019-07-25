@@ -312,7 +312,7 @@ endif;
                     <a href="<?php echo $link ?>" class="text-2 hover-text-1">
                       <div class=" dg-test">
                             <div class="dg-test-text">
-                            موشن گرافیک
+                                <?php echo get_option('habtntext1'); ?>
                             </div>
                         <!--    <div class="header-btn-hover-text flex-column align-items-center justify-content-center text-2">
                                 <div class="">
@@ -337,7 +337,7 @@ endif;
                             <div class="dg-test-text">
 
 
-                                طراحی وب سایت
+                                <?php echo get_option('habtntext2'); ?>
 
 
 
