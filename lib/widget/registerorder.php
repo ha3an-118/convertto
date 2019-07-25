@@ -1,7 +1,11 @@
 <?php
 /**
- *
- */
+* Author: hasan abedi
+* Author URI: http://ha3an.ir
+* Text Domain: dgtheme
+* Description: This tool should show registrer order form    
+* Version: 1.0.0
+*/
  add_action( 'widgets_init' , function() { register_widget( 'RegisterOrder' ); } );
 
 

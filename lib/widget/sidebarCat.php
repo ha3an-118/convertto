@@ -1,7 +1,11 @@
 <?php
 /**
- *
- */
+* Author: hasan abedi
+* Author URI: http://ha3an.ir
+* Text Domain: dgtheme
+* Description: This tool should show category on side bar  
+* Version: 1.0.0
+*/
  require_once(__DIR__."/../widgets_function.php");
  add_action( 'widgets_init' , function() { register_widget( 'SidebarCat' ); } );
 
