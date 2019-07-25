@@ -9,7 +9,8 @@
                         'paged'=> $paged,
                       );
    $wp_query = new WP_Query($wp_query_arg);
-
+  
+   echo "<section id='portfolioshowall' role='haportfolio'>";
    get_template_part('template-parts/gettag','filter');
 
    if($wp_query->have_posts()):
@@ -26,4 +27,5 @@
     else:
        echo "محصولی یافت نشد";
     endif;
+    echo "</section>";
  ?>
