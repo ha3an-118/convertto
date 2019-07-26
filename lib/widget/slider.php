@@ -27,13 +27,16 @@ class SliderWidget extends WP_Widget
         $cycleTime = ((int)$instance["SlidesTime"])*1000;
         $cycleOption = $instance["slideing"];
         $paginationOption = $instance["pagination"];
+        $sliderNaviagation = $instance['SlideNavigation'];
         ?>
         <div class="dg-product-slider ">
 
           <div class="" id="<?php echo esc_attr($this->get_field_id("productpageslider")); ?>"
                 role="slider"
                 <?php echo ($cycleOption=="on")?"cycle=".$cycleTime:"" ?>
-                <?php   echo ($paginationOption == "on")? 'pagination="true"':'';  ?> > 
+                <?php   echo ($paginationOption == "on")? 'pagination="true"':'';  ?>
+                <?php echo ($sliderNaviagation == "on")? 'navigation="true"':'';
+                 ?> > 
                    <!-- IDEA: slider items  -->
                   <div class="" role="sliderItemsHolder">
 
@@ -61,6 +64,28 @@ class SliderWidget extends WP_Widget
                       <div class="" role="sliderPaginations" content>
 
                       </div>
+
+                      <?php   if($sliderNaviagation == 'on'): ?>
+                                <div class="" role="sliderNextPrev">
+
+                                    <div class="slidernextprev">
+
+                                      <div class="slidernextprevrow">
+
+                                        <div class="p-2" role="nextslide">
+                                              <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+                                        </div>
+
+                                        <div class="p-2" role="prevslide">
+                                              <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+                                        </div>
+
+                                      </div>
+
+                                    </div>
+
+                                </div>
+                    <?php    endif; // slidernaVigation ?>
 
                   </div>
           </div> <!-- end [role=slider] -->
