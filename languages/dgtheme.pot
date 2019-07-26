@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Convertto\n"
+"Project-Id-Version: dgtheme\n"
 "Report-Msgid-Bugs-To: https://github.com/habedi/convertto\n"
 "POT-Creation-Date: 2019-05-14 09:40:46+00:00\n"
 "MIME-Version: 1.0\n"
@@ -24,6 +24,25 @@ msgstr ""
 
 #: test of what happend 
 msgid "site"
+msgstr ""
+
+#: /lib/ajax/handelare 
+msgid "Error:There is a problem with the packets that you contact with support or try again"
+msgstr ""
+
+#: /lib/ajax/handelare
+
+msgid "Success: Your message has been registered and I'll be calling you as soon as possible"
+msgstr ""
+
+#: /lib/ajax/handelare 
+
+msgid "Error: Register the error message again. Try again"
+msgstr ""
+
+#: /lib/ajax/handelare 
+
+msgid "Error: All entries must be filled in"
 msgstr ""
 
 
