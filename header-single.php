@@ -11,19 +11,19 @@ endif;
         <title><?php echo bloginfo("name"); ?></title>
         <meta name="description" content="<?php echo bloginfo("discription"); ?>">
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/bootstrap.css">
-        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/expand.js"></script>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/bootstrap.min.css">
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/expand.min.js"></script>
         <!--      slider part           -->
-        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/slider.js"></script>
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/slider.css">
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/slider.min.js"></script>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/slider.min.css">
         <!-- add other css file  -->
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/colorpalet.css">
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/font.css">
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/tiFontIcon.css">
-                <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/fontawesome.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/colorpalet.min.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/font.min.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/tiFontIcon.min.css">
+                <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/assets/css/fontawesome.min.css">
 
-          <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/portfolio.js"></script>
+          <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri()?>/assets/js/portfolio.min.js"></script>
           <style media="screen">
           html{
             padding: 0 !important;

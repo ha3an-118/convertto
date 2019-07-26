@@ -13,5 +13,4 @@ function hafilterportfolio( inputobject ){
     $(portfolioID).find("[termid]").not("[termid="+showid+"]").hide();
 
   }
-
 }
